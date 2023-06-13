@@ -1,0 +1,292 @@
+/* styles about me section*/
+#about-me article {
+    margin-bottom: 2rem;
+}
+
+.my-description div div {
+    background: transparent;
+}
+
+.my-description h3 {
+    margin-bottom: 1rem;
+}
+
+.my-description-text .text-who-i-am {
+    margin: 1rem;
+    padding: 1rem;
+    min-width: 250px;
+    border: 3px solid var(--aqua);
+    outline: 1px solid var(--aqua);
+    outline-offset: 3px;
+    border-radius: 1rem;
+    box-shadow:
+       inset 1rem 2rem 2rem rgba(0, 0, 0 ,0.5),
+       0rem 1rem 0.5rem var(--black);
+}
+
+.text-who-i-am:hover {
+    transform: translateY(-1rem) !important;
+}
+
+.who-i-am-title {
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: x-large;
+    text-shadow: var(--text-shadow);
+}
+
+.container-who-i-am {
+    margin-bottom: 1rem;
+}
+
+.who-i-am-paragrph {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--aqua);
+    transition: all ease-in-out 0.5s;
+}
+
+.who-i-am-paragrph::first-letter {
+    color: var(--aqua);
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.following-and-previous {
+    margin-top: 1rem;
+}
+
+.following-and-previous button {
+    margin: 5px;
+    padding: 10px;
+}
+
+.container-text-technologies {
+    margin: 2rem 0 1rem 0;
+}
+
+.container-text-technologies div {
+    min-width: 245px;
+}
+
+.container-text-technologies div p {
+    margin: 10px;
+    min-width: 245px;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--white);
+    letter-spacing: 3px;
+    text-align: justify;
+}
+
+/* about tecnologies */
+.description {
+    margin: 1rem;
+    min-width: 245px;
+    height: 192px;
+}
+
+.description div {
+    background: var(--black-gardient);
+    border: 4px solid var(--aqua);
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    cursor: url("../img/cursor/pointer.png"), pointer;
+    transition: 0.1s all;
+}
+
+.description div:hover {
+    transform: scale(1.1);
+}
+
+.description div:active {
+    transform: scale(1);
+}
+
+.text-me-hover-1 {
+    height: 50%;
+    left: 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    font-size: 1.2rem;
+    font-family: "RubikDistressed-Regular";
+    color: var(--aqua);
+    background: rgba(255, 247, 247, 0.7);
+    box-shadow:
+       inset 1rem 1rem 1rem rgba(0,0,0,0.4);
+    border-bottom: 4px solid var(--background-1);
+}
+
+.text-me-hover-2 {
+    left: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    background: rgba(255, 247, 247);
+    box-shadow:
+       inset 1rem 1rem 1rem rgba(0,0,0,0.4);
+    border-top: 4px solid var(--background-1);
+}
+
+.exit-button {
+    bottom: -5%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.description p {
+    padding: 1.1rem;
+    font-family: "Oswald-Regular";
+    transition: all 0.5s;
+    font-weight: 900;
+}
+
+/* certifications */
+.certificates-container {
+    padding: 10px;
+}
+
+.certificate-container {
+    background: var(--white);
+    min-width: 245px;
+    max-width: 245px;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 2rem;
+    box-shadow:
+       inset 1rem 1rem 1rem rgba(0,0,0,0.4);
+}
+
+.certificate-container:hover {
+    transform: translateY(-1rem) !important;
+    box-shadow: inset 1rem 1rem 1rem rgba(0,0,0,0.4),
+        var(--box-shadow);
+}
+
+.certificate-container h4 {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: large;
+    margin-bottom: 10px;
+    color: var(--background-2);
+    background: rgba(0, 255, 255, 0.6);
+    border-radius: 1rem;
+}
+
+.certificate-img {
+    border-top: 10px solid var(--background-2);
+    border-bottom: 10px solid var(--background-2);
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+
+.certificate-img-hover {
+    right: -100%;
+    background: rgba(0, 255, 255, 0.6);
+    text-align: center;
+    opacity: 0;
+    transition: all ease 0.3s;
+    font-size: large;
+    font-weight: 900;
+    font-family: "Oswald-Regular";
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+}
+
+.certificate-img:hover .certificate-img-hover {
+    opacity: 1;
+    right: 0;
+}
+
+.certificate-container p {
+    margin-bottom: 1rem;
+    color: var(--white);
+    padding: 15px;
+    background: var(--background-2);
+    font-weight: 100;
+}
+
+.certificate-container p::first-letter {
+    color: var(--aqua);
+    font-size: x-large;
+    letter-spacing: 3px;
+}
+
+.download-certificate {
+    padding: 1rem;
+}
+
+.download-certificate .download-certification {
+    background: var(--background-1);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: 100;
+    transition: 0.2s;
+}
+
+.download-certificate .download-certification:hover {
+    transform: scale(1.1);
+}
+
+.download-certificate .download-certification:active {
+    transform: scale(0.9);
+    opacity: 0.8;
+    box-shadow: var(--box-shadow);
+}
+
+.download-certificate button {
+    background: var(--background-2);
+    color: var(--white);
+    border: none;
+    border-radius: 1rem;
+    transition: 0.2s;
+}
+
+/* animates-javascript */
+.selection-button-who-i-am {
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+.text-me-hover-1-add {
+    opacity: 1;
+    top: -100%;
+    z-index: 1;
+} 
+
+.text-me-hover-2-add {
+    opacity: 1;
+    top: -50%;
+    text-align: top;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.text-me-hover-1-remove {
+    opacity: 0;
+    top: 100%;
+    z-index: 0;
+} 
+
+.text-me-hover-2-remove {
+    opacity: 0;
+    bottom: -100%;
+    z-index: 0;
+}
+
+.exit-button-add {
+    left: 35%;
+    z-index: 1;
+    opacity: 1;
+}
+
+.exit-button-remove {
+    left: -30%;
+    z-index: 0;
+    opacity: 0;
+}

@@ -1,0 +1,25 @@
+/* opacity animation scroll */
+.element-paragraph, #social-container,
+.my-description-text-1, .my-description-text-2, .technologies-text-1, .technologies-text-2, .text-certifications-1, .text-certifications-2,
+.my-projects-text-1, .my-projects-text-2,
+.text-services-1, .text-services-2,
+.social-network-blog-container, .text-video-1, .text-video-2, .text-post-1, .text-post-2,
+.text-contact-1, .text-contact-2 {
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 0.5s;
+}
+/* opacity animation scroll */
+
+/* translate animation scroll */
+.buttons-cv-repo-scroll,
+.text-who-i-am, .description, .certificate-container,
+.project-button, .projects-container, .projects,
+.button-template,
+.video-container, .post,
+.form-input {
+    opacity: 0;
+    transform: translateY(-150%);
+    z-index: -1;
+}
+/* translate animation scroll */

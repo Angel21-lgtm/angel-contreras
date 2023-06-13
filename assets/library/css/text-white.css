@@ -1,0 +1,18 @@
+/* text white */
+.text-certifications {
+    margin: 3rem 0;
+    min-width: 245px;
+}
+
+.text-certifications p {
+    max-width: 350px;
+    margin: 10px;
+    min-width: 245px;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: justify;
+    position: relative;
+}

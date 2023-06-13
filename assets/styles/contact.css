@@ -1,0 +1,359 @@
+/* contact styles */
+
+/* form */
+.article-form {
+    margin: 2rem 0;
+}
+
+.form-container {
+    margin: 2rem 0;
+    max-width: 600px;
+}
+
+/* form image */
+.form-img {
+    width: 25%;
+    max-width: 100px;
+    height: auto;
+    padding: 1rem;
+    border-radius: 50%;
+    background: var(--background-1);
+    margin: 2rem 0;
+}
+
+.form-img div {
+    top: -50%;
+    right: -100%;
+    animation: email-message 3s infinite linear;
+}
+
+@keyframes email-message {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        top: -50%;
+        right: -100%;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    20% {
+        transform: scale(0.9);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    40% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    70% {
+        transform: rotate(-10deg);
+    }
+    80% {
+        transform: rotate(10deg);
+    }
+    90% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.form-img div::after {
+    content: "¡Hola!";
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    position: absolute;
+    top: -25%;
+    left: -25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    font-family: "Oswald-Regular";
+    font-size: large;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+}
+
+/* email input and name input form */
+.text-input div {
+    width: 48%;
+    margin: 1rem 0 0 0;
+    overflow: hidden;
+    transition: 0.1s linear;
+    transition-delay: 1s;
+}
+
+.text-input div:hover {
+    border: 3px solid var(--aqua);
+}
+
+.text-input div:hover .span-input-1 {
+    animation: span-input-1 0.5s;
+}
+
+.text-input div:hover .span-input-2 {
+    animation: span-input-2 0.5s;
+    animation-delay: 0.25s;
+}
+
+.text-input div:hover .span-input-3 {
+    animation: span-input-3 0.5s;
+    animation-delay: 0.5s;
+}
+
+.text-input div:hover .span-input-4 {
+    animation: span-input-4 0.5s;
+    animation-delay: 0.75s;
+}
+
+/* subject input form */
+.subject-input {
+    overflow: hidden;
+    margin: 1rem 0 0 0;
+}
+
+.subject-input:hover {
+    border: 3px solid var(--aqua);
+}
+
+.subject-input:hover .span-input-1 {
+    animation: span-input-1 0.5s;
+}
+
+.subject-input:hover .span-input-2 {
+    animation: span-input-2 0.5s;
+    animation-delay: 0.25s;
+}
+
+.subject-input:hover .span-input-3 {
+    animation: span-input-3 0.5s;
+    animation-delay: 0.5s;
+}
+
+.subject-input:hover .span-input-4 {
+    animation: span-input-4 0.5s;
+    animation-delay: 0.75s;
+}
+
+
+/* textarea form */
+.mesaje-textarea {
+    overflow: hidden;
+    margin: 1rem 0 0 0;
+}
+
+.mesaje-textarea:hover {
+    border: 3px solid var(--aqua);
+}
+
+.mesaje-textarea:hover .span-input-1 {
+    animation: span-input-1 0.5s;
+}
+
+.mesaje-textarea:hover .span-input-2 {
+    animation: span-input-2 0.5s;
+    animation-delay: 0.25s;
+}
+
+.mesaje-textarea:hover .span-input-3 {
+    animation: span-input-3 0.5s;
+    animation-delay: 0.5s;
+}
+
+.mesaje-textarea:hover .span-input-4 {
+    animation: span-input-4 0.5s;
+    animation-delay: 0.75s;
+}
+
+/* submit input */
+.submit-container {
+    margin: 1rem 0 0 0;
+}
+
+#submit-input {
+    color: var(--aqua);
+    border-radius: 5px;
+    cursor: url("../img/cursor/pointer.png"), pointer;
+    border: 2px solid rgba(0, 255, 255, 0.5);
+}
+
+#submit-input:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: var(--white);
+}
+
+#submit-input:active {
+    transform: scale(0.9);
+    opacity: 0.8;
+    transition: 0s;
+}
+
+/* error date form */
+.error-data-form {
+    top: 0;
+    right: -100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 3px solid rgba(255, 13, 0, 0.9);
+    box-shadow: 0 0 5px rgba(255, 13, 0, 0.7), 0 0 5px rgba(255, 13, 0, 0.7),
+    0 0 5px rgba(255, 13, 0, 0.7);
+    font-family: "Oswald-Regular";
+    color: rgba(255, 13, 0, 0.9);
+    letter-spacing: 3px;
+}
+
+@keyframes error-data-form {
+    0% {
+        right: -100%;
+    }
+
+    25% {
+        right: 50%;
+    }
+
+    50% {
+        right: -10%;
+    }
+
+    75% {
+        right: 10%;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+/* form */
+
+/* contact */
+footer {
+    background: var(--black);
+    overflow: hidden;
+    padding: 1rem;
+}
+
+footer div {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer div p {
+    padding: 1rem;
+    max-width: 450px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+footer div p::first-letter {
+    color: var(--aqua);
+    font-size: x-large;
+    font-weight: 900;
+
+}
+
+footer ul {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    padding: 0.1rem 0.5rem;
+    max-width: 200px;
+}
+
+footer ul li {
+    width: 50px;
+    height: 50px;
+    margin: 0 1rem;
+}
+
+footer ul li img {
+    transition: 0.2s all ease-out;
+}
+
+footer ul li:hover img {
+    transform: scale(1.1);
+}
+/* contact */
+
+/* animations */
+.span-input-1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, aqua);
+}
+
+.span-input-2 {
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, aqua);
+}
+
+.span-input-3 {
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg, transparent, aqua);
+}
+
+.span-input-4 {
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, aqua);
+}
+
+@keyframes span-input-1 {
+    to {
+        left: 100%;
+    }
+
+    from {
+        left: -100%;
+    }
+}
+
+@keyframes span-input-2 {
+    to {
+        top: 100%;
+    }
+
+    from {
+        top: -100%;
+    }
+}
+
+@keyframes span-input-3 {
+    to {
+        right: 100%;
+    }
+
+    from {
+        right: -100%;
+    }
+}
+
+@keyframes span-input-4 {
+    to {
+        bottom: 100%;
+    }
+
+    from {
+        bottom: -100%;
+    }
+}

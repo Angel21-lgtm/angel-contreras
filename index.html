@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ángel Contreras || Desarrollador y Programador Full-Stack</title>
+    <link rel="shortcut icon" href="./assets/img/browser/browser.png" type="image/png">
+
+    <link rel="stylesheet" href="./assets/library/css/text-animations.css">
+    <link rel="stylesheet" href="./assets/library/css/text-white.css">
+    <link rel="stylesheet" href="./assets/library/css/animations.css">
+    <link rel="stylesheet" href="./assets/library/css/flexbox.css">
+    <link rel="stylesheet" href="./assets/library/css/width-end-height.css">
+    <link rel="stylesheet" href="./assets/library/css/display.css">
+    <link rel="stylesheet" href="./assets/library/css/position.css">
+
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/loading.css">
+    <link rel="stylesheet" href="./assets/styles/cursor.css">
+    <link rel="stylesheet" href="./assets/styles/repo-fixed.css">
+    <link rel="stylesheet" href="./assets/styles/header.css">
+    <link rel="stylesheet" href="./assets/styles/home.css">
+    <link rel="stylesheet" href="./assets/styles/about.css">
+    <link rel="stylesheet" href="./assets/styles/portfolio.css">
+    <link rel="stylesheet" href="./assets/styles/services.css">
+    <link rel="stylesheet" href="./assets/styles/blog.css">
+    <link rel="stylesheet" href="./assets/styles/contact.css">
+    <link rel="stylesheet" href="./assets/styles/scroll-animations.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+</head>
+<body id="body-container" class="relative">
+
+    <!-- loading -->
+    <div id="loading" class="fixed flex justify-center align-items-center">
+        <div class="load relative flex justify-center align-items-center">
+            <div class="load-1 absolute"></div>
+            <div class="load-2 absolute"></div>
+            <div class="load-3 absolute"></div>
+            <div class="load-4 absolute"></div>
+            <div class="load-5 col-w-8 col-h-8">
+                <p class="col-w-12 col-h-12 relative flex justify-center align-items-center">
+                    Cargando
+                    <span class="span-loading-1 absolute"></span>
+                    <span class="span-loading-2 absolute"></span>
+                    <span class="span-loading-3 absolute"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- loading -->
+
+    <!-- cursor -->
+    <div id="cursor" class="absolute flex justify-center align-items-center">
+        <div class="absolute"></div>
+    </div>
+    <!-- cursor -->
+
+    <!-- repo fixed -->
+    <div id="repo-fixed" class="repo-fixed fixed">
+    </div>
+    <!-- repo fixed -->
+
+    <!-- Home -->
+    <section id="home" class="relative">
+        <div id="button-menu" class="off-menu flex align-items-center justify-center">
+            <img class="col-h-12" src="./assets/img/home/menu.svg" alt="menu">
+        </div>
+        <header id="static-menu" class="flex flex-column justify-space-evenly col-w-6 col-h-12 fixed left-header">
+            <li class="flex align-items-center">
+                <span class="title-bracket absolute">
+                    [</span><span>&#160;</span>
+                        <a href="#home" class="title-bracket">Inicio</a>
+                    <span>&#160;</span><span class="title-bracket">]
+                </span>
+            </li>
+            <li class="flex align-items-center">
+                <a href="#about-me">Acerca de mí</a>
+            </li>
+            <li class="flex align-items-center">
+                <a href="#portfolio">Portafolio</a>
+            </li>
+            <li class="flex align-items-center">
+                <a href="#services">Mis servicios</a>
+            </li>
+            <li class="flex align-items-center">
+                <a href="#blog">Blog</a>
+            </li>
+            <li class="flex align-items-center">
+                <a href="#contact">Contacto</a>
+            </li>
+        </header>
+        <article class="home flex flex-column align-items-center col-w-12">
+
+            <div class="one-home flex justify-center flex-column align-items-center">
+                <h2 class="subtitle-home col-w-10">
+                    <span></span>
+                    <br class="br">
+                    ¡Bienvenido a mi Portafolio!
+                    <br>
+                    <span></span>
+                </h2>
+                <div class="content-title-and-text flex flex-column justify-center align-items-center">
+                    <h1 class="text-animation-container growing flex justify-center align-items-center flex-wrap col-w-12">
+                        <span>Á</span><span>N</span><span>G</span><span>E</span><span>L</span><span>&#160;</span><span>&#160;</span>
+                        <span>C</span><span>O</span><span>N</span><span>T</span><span>R</span><span>E</span><span>R</span><span>A</span><span>S</span>
+                        <div class="margin-title-1 inline absolute"></div>
+                        <div class="margin-title-2 inline absolute"></div>
+                        <div class="margin-title-3 inline absolute"></div>
+                        <div class="margin-title-4 inline absolute"></div>
+                    </h1>
+                    <p>
+                        <span class="title-bracket">[</span><span>&#160;</span>
+                            <span class="professional-in">
+                                
+                            </span>
+                        <span class="write col-w-12 col-h-12">&#160;</span>
+                        <span>&#160;</span><span class="title-bracket">]</span>
+                    </p>
+                    <button class="change button-hover relative">
+                        Siguiente
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <div class="navigation-arrow-left navigation-arrow fixed">
+                    <img class="col-w-12 col-h-8 absolute" src="./assets/img/home/navigation-arrow.png" alt="right navigation arrow">
+                    <span class="absolute col-w-12 col-h-6 flex justify-center align-items-center">Scroll</span>
+                </div>
+                <div class="navigation-arrow-right navigation-arrow fixed">
+                    <img class="col-w-12 col-h-8 absolute" src="./assets/img/home/navigation-arrow.png" alt="left navigation arrow">
+                    <span class="absolute col-w-12 col-h-6 flex justify-center align-items-center">Scroll</span>
+                </div>
+            </div>
+
+            <div class="principal-section relative flex justify-center col-w-12">
+                <div class="my-photo relative">
+                    <img class="photo-img col-w-12 col-h-12" src="./assets/img/home/photo.svg" alt="my photo">
+                </div>
+            </div>
+           
+            <div class="buttons-cv-repo flex flex-wrap justify-center">
+                <h3 class="col-w-12 text-animation-container growing flex justify-center align-items-center flex-wrap">
+                    <span>M</span><span>i</span><span>&#160;</span>
+                    <span>C</span><span>V</span><span>&#160;</span>
+                    <span>y</span><span>&#160;</span>
+                    <span>M</span><span>i</span><span>&#160;</span>
+                    <span>R</span><span>e</span><span>p</span><span>o</span><span>s</span><span>i</span><span>t</span><span>o</span><span>r</span><span>i</span><span>o</span>
+                    <div class="margin-title-1 inline absolute"></div>
+                    <div class="margin-title-2 inline absolute"></div>
+                    <div class="margin-title-3 inline absolute"></div>
+                    <div class="margin-title-4 inline absolute"></div>
+                </h3>
+                <button class="cv buttons-cv-repo-scroll">
+                    <a class="col-w-12 col-h-12 flex" id="download-cv" href="./assets/cv/Miguel Ángel Contreras Osorio.pdf" download="Miguel Ángel Contreras Osorio.pdf">
+                        Descargar CV
+                    </a>
+                </button>
+                <button id="virtual-cv" class="button-hover buttons-cv-repo-scroll">
+                    CV Virtual
+                </button>
+                <button id="repo-github" class="button-hover buttons-cv-repo-scroll">
+                    Repositorio GitHub
+                </button>
+            </div>
+
+            <div class="my-social-network flex flex-column align-items-center flex-wrap">
+                <p class="element-paragraph opacity-animation-off">
+                    <span></span>
+                    <br>
+                    Estas son mis redes sociales. <br>
+                    No olvides visitarlas y seguirme para estar al tanto del contenido publicado sobre mis proyectos.
+                    <br>
+                    <span></span>
+                </p>
+                <ul id="social-container" class="flex opacity-animation-off">
+                    <li>
+                        <img src="./assets/img/home/social network/sololearn.svg" alt="SoloLearn">
+                    </li>
+                    <li>
+                        <img src="./assets/img/home/social network/linkedin.svg" alt="Linkedin">
+                    </li>
+                    <li>
+                        <img src="./assets/img/home/social network/github.svg" alt="GitHub">
+                    </li>
+                    <li>
+                        <img src="./assets/img/home/social network/codepen.svg" alt="Codepen">
+                    </li>
+                </ul>
+            </div>
+            
+        </article>
+    </section>
+    <!-- Home -->
+
+    <!-- About me -->
+    <section id="about-me">
+
+        <div class="col-w-12 flex justify-center flex-column align-items-center">
+            <h2 class="subtitle-about-me col-w-10">
+                <span></span>
+                <br>
+                    Acerca de mí
+                <br>
+                <span></span>
+            </h2>
+
+            <div class="col-w-12 flex justify-center align-items-center">
+                <h3 class="text-animation-container growing flex justify-center align-items-center flex-wrap">
+                    <span>M</span></span><span>i</span><span>&#160;</span><span>&#160;</span>
+                    <span>D</span><span>e</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>c</span><span>i</span><span>ó</span><span>n</span>
+                    <div class="margin-title-1 inline absolute"></div>
+                    <div class="margin-title-2 inline absolute"></div>
+                    <div class="margin-title-3 inline absolute"></div>
+                    <div class="margin-title-4 inline absolute"></div>
+                </h3>
+            </div>
+
+            <div class="text-certifications col-w-12 flex flex-wrap justify-center">
+                <p class="col-w-5 element-paragraph my-description-text-1">
+                    <span></span>
+                    <br>
+                    Esta es una breve descripción de mi trabajo, experiencias, gustos, habilidades y más para conocerme mejor.
+                    <span></span>
+                    <br>
+                    <span></span>
+                </p>
+    
+                <p class="col-w-5 element-paragraph my-description-text-2">   
+                    <span></span>
+                    <br>                
+                    Presiona los botones en la parte inferior derecha e izquierda de los contenedores para navegar.
+                    <br>
+                    <span></span>
+                </p>
+            </div>
+
+            <article class="my-description flex flex-column align-items-center">
+
+                <div class="col-w-12 my-description-text flex flex-wrap justify-center">
+
+                </div>
+
+            </article>
+
+            <div class="col-w-12 flex justify-center align-items-center">
+                <h3 class="text-animation-container growing flex justify-center align-items-center flex-wrap">
+                    <span>S</span><span>o</span><span>b</span><span>r</span><span>e</span><span>&#160;</span><span>&#160;</span>
+                    <span>T</span><span>e</span><span>c</span><span>n</span><span>o</span><span>l</span><span>o</span><span>g</span><span>í</span><span>a</span><span>s</span>
+                    <div class="margin-title-1 inline absolute"></div>
+                    <div class="margin-title-2 inline absolute"></div>
+                    <div class="margin-title-3 inline absolute"></div>
+                    <div class="margin-title-4 inline absolute"></div>
+                </h3>
+            </div>
+
+            <div class="container-text-technologies flex flex-column">         
+                <div class="flex justify-center flex-wrap">
+                    <p class="col-w-5 element-paragraph technologies-text-1">
+                        <span></span>
+                        <br>
+                        Esta es una breve descripción de algunas de las tecnologías que utilizo actualmente.
+                        <br>
+                        <span></span>
+                    </p>
+                    <p class="col-w-5 element-paragraph technologies-text-2">
+                        <span></span>
+                        <br>
+                        Haz click sobre cada imagen para ver la descripción.
+                        <br>
+                        <span></span>
+                    </p>
+                </div>
+            </div>
+
+            <article id="sections-about-me" class="flex flex-wrap justify-center col-w-12 relative">
+            </article>
+
+            <div class="col-w-12 flex justify-center align-items-center" style="margin: 4rem 0 2rem 0;">
+                <h3 class="text-animation-container growing flex justify-center align-items-center flex-wrap">
+                    <span>M</span><span>i</span><span>s</span><span>&#160;</span><span>&#160;</span>
+                    <span>T</span><span>í</span><span>t</span><span>u</span><span>l</span><span>o</span><span>s</span><span>,</span><span>&#160;</span><span>&#160;</span>
+                    <span>C</span><span>e</span><span>r</span><span>t</span><span>i</span><span>f</span><span>i</span><span>c</span><span>a</span><span>d</span><span>o</span><span>s</span><span>&#160;</span><span>&#160;</span>
+                    <span>y</span><span>&#160;</span><span>&#160;</span>
+                    <span>D</span><span>i</span><span>p</span><span>l</span><span>o</span><span>m</span><span>a</span><span>s</span>
+                    <div class="margin-title-1 inline absolute"></div>
+                    <div class="margin-title-2 inline absolute"></div>
+                    <div class="margin-title-3 inline absolute"></div>
+                    <div class="margin-title-4 inline absolute"></div>
+                </h3>
+            </div>
+
+            <div class="text-certifications col-w-12 flex flex-wrap justify-center">
+                <p class="col-w-5 element-paragraph text-certifications-1">
+                    <span></span>
+                    <br>
+                    En esta sección encontrarás mis certificados, diplomas y títulos sobre mi profesión.
+                    <br>
+                    <span></span>
+                </p>
+
+                <p class="col-w-5 element-paragraph text-certifications-2">
+                    <span></span>
+                    <br>
+                    Puedes ver mi certificado, título o diploma presionando el botón inferior derecho o descargarlo presionando el botón inferior izquierdo.
+                    <br>
+                    <span></span>
+                </p>
+            </div>
+
+            <article class="certificates col-w-12 flex flex-column justify-center align-items-center">
+                <div class="certificates-container flex justify-center flex-wrap col-w-12">
+
+                </div>
+            </article>
+        </div>
+
+    </section>
+    <!-- About me -->
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="relative">
+
+        <div class="col-w-12 flex justify-center flex-wrap">
+            <h2 class="subtitle-portfolio col-w-10">
+                <span></span>
+                <br>
+                    Portafolio
+                <br>
+                <span></span>
+            </h2>
+        </div>
+
+        <div class="col-w-12 flex justify-center align-items-center">
+            <h3 class="text-animation-container growing flex justify-center align-items-center flex-wrap">
+                <span>P</span><span>r</span><span>o</span><span>y</span><span>e</span><span>c</span><span>t</span><span>o</span><span>s</span>
+                <div class="margin-title-1 inline absolute"></div>
+                <div class="margin-title-2 inline absolute"></div>
+                <div class="margin-title-3 inline absolute"></div>
+                <div class="margin-title-4 inline absolute"></div>
+            </h3>
+        </div>
+
+        <div class="my-projects flex justify-center flex-wrap">
+            <p class="col-w-5 element-paragraph my-projects-text-1">
+                <span></span>
+                <br>
+                Si quieres saber el título y descripción de mi proyecto, pasa el cursor sobre el mismo.
+                <br>
+                <span></span>
+            </p>
+            <p class="col-w-5 element-paragraph my-projects-text-2">
+                <span></span>
+                <br>
+                Para ir al proyecto, has clic en en la parte inferior derecha en la imagen del ojo.
+                <br>
+                <span></span>
+            </p>
+        </div>
+
+        <div class="sections-portfolio-buttons-container flex justify-center">
+            <div class="flex justify-center flex-wrap col-w-10" id="select-projects-section">
+                <button id="all-button" class="button-add-select button-hover project-button">
+                    Todo
+                </button>
+                <!-- <button id="webs-button" class="button-hover project-button">
+                    Webs
+                </button> -->
+                <!-- <button id="mobile-apps-button" class="button-hover project-button">
+                    Aplicaciones móviles
+                </button> -->
+                <button id="videogames-button" class="button-hover project-button">
+                    Videojuegos
+                </button>
+                <!-- <button id="animations-button" class="button-hover project-button">
+                    Animaciones
+                </button> -->
+                <button id="react-course-button" class="button-hover project-button">
+                    Proyectos curso react
+                </button>
+            </div>
+        </div>
+
+        <article id="all-projects" class="col-w-12 relative">
+            
+        </article>
+
+        <div class="selection-project selection-project-remove flex flex-column justify-center align-items-center fixed">
+
+            <h3 class="title-project-selection title-project-selection-remove col-w-6"></h3>
+
+            <div class="img-project-selection-container img-project-selection-container-remove col-w-10 col-h-8 relative">
+                <div class="exit-project-selection exit-project-selection-remove absolute">
+                    <img class="col-w-12 col-h-12" src="./assets/img/portfolio/icons/exit.svg" alt="Exit">
+                </div>
+
+                <img class="img-project-selection img-project-selection-remove col-w-12 col-h-12" src="" alt="">
+
+                <a class="eye-project eye-project-remove absolute" target="_blank" href="">
+                    <img class=" col-w-12 col-h-12" src="./assets/img/portfolio/icons/eye.svg" alt="Click to project">
+                </a>
+            </div>
+
+            <p class="description-project-selection description-project-selection-remove col-w-10"></p>
+
+        </div>
+
+    </section>
+    <!-- Portfolio -->
+
+    <!-- services -->
+    <section id="services">
+        <!-- title section -->
+        <div class="flex justify-center">
+            <h2 class="subtitle-blog col-w-10">
+                <span></span>
+                <br>
+                    Mis servicios
+                <br>
+                <span></span>
+            </h2>
+        </div>
+        <!-- title section -->
+
+        <!-- subtitle article -->
+        <div class="col-w-12 flex justify-center align-items-center">
+            <h3 class="text-animation-container growing flex justify-center align-items-center flex-wrap">
+                <span>D</span><span>e</span><span>s</span><span>a</span><span>r</span><span>r</span><span>o</span><span>l</span><span>l</span><span>o</span><span>&#160;</span><span>&#160;</span>
+                <span>W</span><span>e</span><span>b</span>
+                <div class="margin-title-1 inline absolute"></div>
+                <div class="margin-title-2 inline absolute"></div>
+                <div class="margin-title-3 inline absolute"></div>
+                <div class="margin-title-4 inline absolute"></div>
+            </h3>
+        </div>
+        <!-- subtitle article -->
+
+        <!-- text my article -->
+        <div class="text-certifications col-w-12 flex flex-wrap justify-center">
+            <p class="col-w-5 element-paragraph text-services-1">
+                <span></span>
+                <br>        
+                Para contratar mis servicios de "Desarrollo Web" puedes navegar en la sección de plantillas y el tipo de trabajo que requieras.
+                <br>
+                <span></span>
+            </p>
+
+            <p class="col-w-5 element-paragraph text-services-2">
+                <span></span>
+                <br>
+                Puedes escoger la plantilla que más te agrade o pedir una personalizada y escoger la tecnología de tu interés (Reactjs, Bootstrap, WordPress, Expressjs, etc).
+                <br>
+                <span></span>
+            </p>
+        </div>
+        <!-- text my article -->
+
+        <!-- artcle of my section -->
+        <article class="templates-article flex justify-center align-items-center flex-column">
+            <!-- templates buttons -->
+            <ul class="templates-buttons-container col-w-6 flex justify-center align-items-center">
+                <li class="button-template">
+                    <button id="portfolio-template" class="button-hover button-add-select">Portafolio</button>
+                </li>
+                <li class="button-template">
+                    <button id="business-template" class="button-hover">Negocio</button>
+                </li>
+            </ul>
+            <!-- templates buttons -->
+
+            <!-- templates -->
+            <div class="templates col-w-12 flex justify-center align-items-center flex-wrap">
+            </div>
+            <!-- templates -->
+        </article>
+        <!-- artcle of my section -->
+
+    </section>
+    <!-- services -->
+
+    <!-- Blog -->
+    <section id="blog">
+        <div class="flex justify-center">
+            <h2 class="subtitle-blog col-w-10">
+                <span></span>
+                <br>
+                    Blog
+                <br>
+                <span></span>
+            </h2>
+        </div>
+
+        <!-- video -->
+        <div class="col-w-12 flex justify-center align-items-center">
+            <h3 class="text-animation-container growing flex justify-center align-items-center flex-wrap">
+                <span>V</span><span>i</span><span>d</span><span>e</span><span>o</span><span>s</span>
+                <div class="margin-title-1 inline absolute"></div>
+                <div class="margin-title-2 inline absolute"></div>
+                <div class="margin-title-3 inline absolute"></div>
+                <div class="margin-title-4 inline absolute"></div>
+            </h3>
+        </div>
+
+        <nav class="social-network-blog-container col-w-12 flex justify-center">
+            <ul class="social-network-blog col-w-5 flex justify-space-around">
+                <li id="youtube">
+                    <img class="col-w-12 col-h-12" src="./assets/img/blog/youtube.svg" alt="Youtube">
+                </li>
+                <li id="twitter">
+                    <img class="col-w-12 col-h-12" src="./assets/img/blog/twitter.svg" alt="Twitter">
+                </li>
+            </ul>
+        </nav>
+
+        <div class="text-certifications col-w-12 flex flex-wrap justify-center">
+            <p class="col-w-5 element-paragraph text-video-1">
+                <span></span>
+                <br>        
+                Próximamente videos exclusivos en mi canal de YouTube.
+                <br>
+                <span></span>
+            </p>
+
+            <p class="col-w-5 element-paragraph text-video-2">
+                <span></span>
+                <br>
+                Noticias sobre programación e informática en general.
+                <br>
+                <span></span>
+            </p>
+        </div>
+
+        <article class="blog-video col-w-12 flex justify-center flex-wrap"> 
+        </article>
+        <!-- video -->
+
+        <!-- post -->
+        <div class="col-w-12 flex justify-center align-items-center">
+            <h3 class="text-animation-container growing flex justify-center align-items-center flex-wrap">
+                <span>C</span><span>u</span><span>r</span><span>s</span><span>o</span><span>s</span>
+                <div class="margin-title-1 inline absolute"></div>
+                <div class="margin-title-2 inline absolute"></div>
+                <div class="margin-title-3 inline absolute"></div>
+                <div class="margin-title-4 inline absolute"></div>
+            </h3>
+        </div>
+
+        <div class="text-certifications col-w-12 flex flex-wrap justify-center">
+            <p class="col-w-5 element-paragraph text-post-1">
+                <span></span>
+                <br>
+                Puedes visitar mis cursos gratuitos que próximamente publicaré en este artículo del blog.
+                <br>
+                <span></span>
+            </p>
+
+            <p class="col-w-5 element-paragraph text-post-2">
+                <span></span>
+                <br>
+                Para visitarlo presiona el hashtag y no olvides dejar tus preciados likes.
+                <br>
+                <span></span>
+            </p>
+        </div>
+
+        <article class="news col-w-12 flex flex-wrap justify-center">
+            
+        </article>
+        <!-- post -->
+
+    </section>
+    <!-- Blog -->
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <div class="flex justify-center">
+            <h2 class="subtitle-contact col-w-10">
+                <span></span>
+                <br>
+                    Contacto
+                <br>
+                <span></span>
+            </h2>
+        </div>
+
+        <div class="col-w-12 flex justify-center align-items-center">
+            <h3 class="text-animation-container growing flex justify-center align-items-center flex-wrap">
+                <span>F</span><span>o</span><span>r</span><span>m</span><span>u</span><span>l</span><span>a</span><span>r</span><span>i</span><span>o</span>
+                <div class="margin-title-1 inline absolute"></div>
+                <div class="margin-title-2 inline absolute"></div>
+                <div class="margin-title-3 inline absolute"></div>
+                <div class="margin-title-4 inline absolute"></div>
+            </h3>
+        </div>
+
+        <div class="text-certifications col-w-12 flex flex-wrap justify-center">
+            <p class="col-w-5 element-paragraph text-contact-1">
+                <span></span>
+                <br>
+                Puedes ponerte en contacto conmigo mediante el siguiente formulario. No tardaré en responderte.
+                <br>
+                <span></span>
+            </p>
+
+            <p class="col-w-5 element-paragraph text-contact-2">
+                <span></span>
+                <br>   
+                También puedes contactarme directamente desde WhatsApp ó Telegram.
+                <br>
+                <span></span>
+            </p>
+        </div>
+
+        <article class="article-form col-w-12 flex flex-column justify-center align-items-center">
+
+            <div class="form-container col-w-11 flex flex-column justify-center align-items-center">
+
+                <div class="form-img relative">
+                    <img class="col-w-12 col-h-12" src="./assets/img/browser/browser.png" alt="Form image">
+                    <div class="absolute col-w-11 col-h-11">
+                        <img class="col-w-12 col-h-12" src="./assets/img/contact/email.svg" alt="Email">
+                    </div>
+                </div>
+
+                <form id="form" autocomplete="off" action="https://formsubmit.co/d1bb7aa685b90978794d599a96f0a5a9" method="post" class="flex flex-column col-w-12">
+
+                    <div class="form-input text-input col-w-12 flex justify-space-between relative">
+
+                        <div class="relative">
+                            <input id="email-input" type="email" name="Email" placeholder="Correo" class="col-w-12">
+                            <span class="span-input-1 absolute"></span>
+                            <span class="span-input-2 absolute"></span>
+                            <span class="span-input-3 absolute"></span>
+                            <span class="span-input-4 absolute"></span>
+                        </div>
+
+                        
+                        <div class="relative">
+                            <input id="name-input" type="text" name="Name" placeholder="Nombre" class="col-w-12">
+                            <span class="absolute"></span>
+                            <span class="span-input-1 absolute"></span>
+                            <span class="span-input-2 absolute"></span>
+                            <span class="span-input-3 absolute"></span>
+                            <span class="span-input-4 absolute"></span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="form-input subject-input col-w-12 relative">
+                        <input id="subject-input" type="text" name="Subject" class="col-w-12" placeholder="Asunto">
+                        <span class="span-input-1 absolute"></span>
+                        <span class="span-input-2 absolute"></span>
+                        <span class="span-input-3 absolute"></span>
+                        <span class="span-input-4 absolute"></span>
+                    </div>
+    
+                    <div class="form-input mesaje-textarea col-w-12 relative">
+                        <textarea id="message-textarea" name="Text" cols="30" rows="10" placeholder="Mensaje" class="col-w-12"></textarea>
+                        <span class="span-input-1 absolute"></span>
+                        <span class="span-input-2 absolute"></span>
+                        <span class="span-input-3 absolute"></span>
+                        <span class="span-input-4 absolute"></span>
+                    </div>
+    
+                    <div class="form-input submit-container col-w-12 relative">
+                        <input id="submit-input" value="Enviar" type="submit" class="button-hover block">
+                        <span id="error-data-form" class="error-data-form absolute col-h-12 flex justify-center align-items-center">Error</span>
+                    </div>
+
+                    <input type="hidden" name="_next" value="https://angel-contreras.netlify.app/#contact" >
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+
+            </div>
+
+        </article>
+    </section>
+
+    <footer class="flex flex-column align-items-center">
+        <div class="col-w-12 flex justify-center flex-wrap">
+            <p class="col-w-8">
+                La página fue creada por Ángel Contreras, desarrollador y programador Full-Stack. <br>
+                Fecha de última actualización: 12/06/2023.
+            </p>
+            <p class="col-w-8">
+                No olvides contactarme para cualquier información sobre trabajos de desarrollo y programación. <br>
+                Sígueme en mis redes sociales.
+            </p>
+        </div>
+
+        <ul class="col-w-6 flex align-items-center justify-center">
+            <li>
+                <a href="https://wa.me/+5215566584787" target="_blank" class="col-w-12 col-h-12">
+                    <img src="./assets/img/contact/whatsapp.svg" alt="WhatsApp" class="col-w-12 col-h-12">
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/AngelContreras24" target="_blank" class="col-w-12 col-h-12">
+                    <img src="./assets/img/contact/telegram.svg" alt="Telegram" class="col-w-12 col-h-12" class="col-w-12 col-h-12">
+                </a>
+            </li>
+        </ul>
+
+        <div class="created col-w-6 flex align-items-center justify-center">
+            <p class="col-w-8 flex justify-center align-items-center">
+                Creada el 12/06/2023 ©
+            </p>
+        </div>
+    </footer>
+    <!-- Contact -->
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+</html>

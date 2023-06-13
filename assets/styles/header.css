@@ -1,0 +1,45 @@
+/* header style */
+#button-menu {
+    height: 3rem;
+    width: 3rem;
+    cursor: url("../img/cursor/pointer.png"), pointer;
+    border-radius: 1rem;
+    padding: 10px;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+}
+
+#button-menu:hover {
+    transform: scale(1.1);
+}
+
+header {
+    padding: 1rem;
+    height: 5rem;
+    transition: all ease-in 0.5s;
+    background: rgba(15, 14, 14, 0.8);
+    top: 0;
+    left: -50%;
+    z-index: 2;
+}
+
+header a {
+    font-family: "Oswald-Regular";
+    font-weight: 900;
+    padding: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    display: block;
+    transition: all ease-in 0.3s;
+    border-bottom: 2px solid var(--background-1);
+    overflow: visible;
+}
+
+header a:hover {
+    color: var(--aqua);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.9), 0 0 20px rgba(0, 255, 255, 0.9),
+    0 0 30px rgba(0, 255, 255, 0.9);
+    transform: scale(1.1);
+    border-bottom: 2px solid var(--aqua);
+}

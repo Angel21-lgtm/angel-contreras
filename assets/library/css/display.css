@@ -1,0 +1,29 @@
+/* none */
+.none {
+    display: none;
+}
+
+/* block */
+.block {
+    display: block;
+}
+
+/* inline */
+.inline {
+    display: inline;
+}
+
+/* inline-block */
+.inline-block{
+    display: inline-block;
+}
+
+/* flex */
+.flex {
+    display: flex;
+}
+
+/* grid */
+.grid {
+    display: grid;
+}

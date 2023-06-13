@@ -1,0 +1,221 @@
+/* styles blog section*/
+.social-network-blog-container {
+    margin: 2rem 0;
+}
+
+.social-network-blog {
+    padding: 0.7rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    max-width: 220px;
+}
+
+.social-network-blog > li {
+    cursor: url("../img/cursor/pointer.png"), pointer;
+    height: 40px;
+    width: 40px;
+    transition: all ease 0.3s;
+    margin: 0.2rem;
+    padding: 0;
+}
+
+.social-network-blog li:hover {
+    transform: scale(1.2);
+}
+
+.blog-video {
+    padding: 1rem;
+    margin: 2rem 0 4rem 0;
+}
+
+.video-container {
+    margin: 2rem;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    max-width: 350px;
+    box-shadow: var(--box-shadow);
+    background: var(--black-gardient);
+}
+
+.video {
+    min-height: 15rem;
+}
+
+.video-container:hover {
+    transform: translateY(-1rem) !important;
+}
+
+.video-container .blog-title-container{
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+}
+
+.video-container .blog-title-container h4{
+    color: var(--white);
+    text-align: left;
+    font-size: large;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.video-container button {
+    padding: 0.5rem !important;
+    margin: 0 0 0.5rem 0;
+}
+
+.like {
+    height: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.hand-post-container {
+    padding: 0.2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+}
+
+.like-hand {
+    cursor: url("../img/cursor/pointer.png"), pointer;
+}
+
+.like-hand img {
+    transition: all ease 0.2s;
+}
+
+.like-hand:hover img {
+    transform: scale(1.2);
+}
+
+.like-hand:active img {
+    transform: scale(0.9);
+}
+
+/* left like */
+.left-like {
+    border-right: 1px solid var(--white);
+}
+
+/* right like */
+.right-like {
+    border-right: 1px solid var(--white);
+    transform: rotate(180deg);
+}
+
+.like-hand span {
+    text-align: center;
+    font-family: "Oswald-Regular";
+}
+
+.right-like span {
+    transform: rotate(180deg);
+}
+
+/* news */
+.news {
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+
+.post {
+    border-radius: 1rem;
+    background: var(--black-gardient);
+    max-width: 350px;
+    box-shadow: var(--box-shadow);
+    margin: 1rem;
+}
+
+.post:hover {
+    transform: translateY(-1rem) !important;
+}
+
+.pots-img-container img {
+    padding: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.post-text {
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.post-text h4 {
+    text-align: left;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    font-size: large;
+}
+
+.post-text .hashtag-container {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.post-text .hashtag-container a {
+    text-align: left;
+    font-family: "Oswald-Regular";
+    font-weight: 100;
+    color: var(--aqua);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.9), 0 0 20px rgba(0, 255, 255, 0.9),
+    0 0 30px rgba(0, 255, 255, 0.9);
+    transition: 0.2s;
+}
+
+.hashtag-container a:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.like-post {
+    height: 2rem;
+    padding: 5px;
+}
+
+/* left like post */
+.left-like-post {
+    border-right: 1px solid var(--white);
+    background: rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.left-like-post:hover img {
+    transform: scale(1.2);
+}
+
+.left-like-post:active img {
+    transform: scale(0.9);
+}
+
+/* right like post */
+.right-like-post {
+    transform: rotate(180deg);
+    border-right: 1px solid var(--white);
+    background: rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.right-like-post:hover img {
+    transform: scale(1.2);
+}
+
+.right-like-post:active img {
+    transform: scale(0.9);
+}
+
+.count-like-post {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    margin: 0 1rem;
+    padding: 0.2rem;
+    overflow: hidden;
+}
+
+.count-like-post span {
+    font-weight: 100;
+    font-size: small;
+    padding: 0;
+    font-family: "Oswald-Regular";
+}

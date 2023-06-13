@@ -1,0 +1,271 @@
+/* 300 and 575 pixels */
+@media screen and (min-width: 300px) {
+    /* resets */
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    /* resets */
+    
+    /* header */
+        header a {
+            font-size: large;
+        }
+    /* header */
+
+    /* home */
+        h1 {
+            font-size: 1rem;
+            max-width: 90%;
+        }
+
+        .principal-section .my-photo {
+            width: 15rem;
+            height: 15rem;
+        }
+
+        .my-social-network ul {
+            max-width: 90%;
+        }
+    /* home */
+
+    /* about me */
+        .download-certificate .download-certification {
+            font-size: small;
+        }
+    /* about me */
+
+    /* portfolio */
+        .sections-portfolio-buttons-container div {
+            width: 95%;
+        }
+
+        .sections-portfolio-buttons-container button {
+            padding: 10px;
+            font-size: x-small;
+        }
+    /* portfolio */
+
+    /* work */
+    .templates-buttons-container button {
+        padding: 10px;
+        font-size: x-small;
+    }
+    /* work */
+
+    /* blog */
+        .video-container h4 {
+            font-size: small;
+        }
+    /* blog */
+}
+
+/* 576 and 767 pixels */
+@media screen and (min-width: 576px) {
+    /* resets */
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+            padding: 1rem;
+        }
+    /* resets */
+
+    /* img repositori fexed */
+        .repo-fixed {
+            width: 100px;
+            height: 100px;
+        }
+    /* img repositori fexed */
+
+    /* header */        
+        header a {
+            font-size: x-large;
+        }
+    /* header */
+
+    /* home */
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .principal-section .my-photo {
+            width: 20rem !important;
+            height: 20rem !important;
+        }
+
+        .my-social-network ul {
+            max-width: 100%;
+        }
+    /* home */
+
+    /* about me */
+    /* about me */
+
+    /* portfolio */
+        .sections-portfolio-buttons-container div {
+            width: 100%;
+        }
+
+        .sections-portfolio-buttons-container button {
+            padding: 1rem;
+            font-size: small;
+        }
+
+        .sections-portfolio-buttons-container div {
+            width: 95%;
+        }
+
+        .sections-portfolio-buttons-container button {
+            padding: 10px;
+            font-size: x-small;
+        }
+    /* portfolio */
+
+    /* blog */
+        .video-container h4 {
+            font-size: x-large;
+        }
+    /* blog */
+}
+
+/* 768 and 991 pixels */
+@media screen and (min-width: 768px) {
+    /* header */     
+    /* header */
+
+    /* home */   
+        h1 {
+            padding-top: 5rem;
+            font-size: 2rem;
+        }
+        .one-home {
+            flex-direction: row;
+        }
+
+        .one-home h2 {
+            width: 45%;
+            margin: 0.5rem;
+            text-align: left;
+        }
+
+        .content-title-and-text {
+            width: 45%;
+        }
+
+        .principal-section .my-photo {
+            width: 25rem !important;
+            height: 25rem !important;
+        }
+    /* home */
+    
+    /* about me */
+        .my-description-text .text-who-i-am {
+            max-width: 300px;
+        }
+
+        .container-text-technologies div p {
+            max-width: 350px;
+        }
+
+        .description {
+            max-width: 200px;
+        }
+    /* about me */
+    
+    /* portfolio */
+        .my-projects p {
+            max-width: 350px;
+        }
+    /* portfolio */
+    
+    /* blog */
+        .video-container {
+            max-width: 400px !important;
+        }
+    /* blog */
+}
+
+/* 992 and 1199 pixels */
+@media screen and (min-width: 992px) {
+    /* resets */
+       
+    /* resets */
+
+    /* img repositori fexed */
+        .repo-fixed {
+            width: 120px;
+            height: 120px;
+        }
+
+        .repo-fixed::after {
+            height: 40px;
+        }
+
+        .repo-fixed::before {
+            height: 40px;
+        }
+    /* img repositori fexed */
+
+    /* header */
+    header a {
+        font-size: xx-large;
+    }
+    /* header */
+
+    /* home */
+        h1 {
+            font-size: 3rem;
+        }
+        .my-social-network p {
+            font-size: x-large;
+        }
+    /* home */
+    
+    /* about me */
+    /* about me */
+    
+    /* portfolio */
+        #all-projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #all-projects .projects-container {
+            width: 50%;
+        }
+    /* portfolio */
+    
+    /* blog */
+    /* blog */
+}
+
+/* 1200 pixels */
+@media screen and (min-width: 1200px) {
+    /* header*/
+    /* header */
+
+    /* home */   
+    /* home */
+    
+    /* about me */
+    /* about me */
+    
+    /* portfolio */
+        #all-projects {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #all-projects .projects-container {
+            width: 30%;
+        }
+    /* portfolio */
+
+    /* blog */
+    /* blog */
+}

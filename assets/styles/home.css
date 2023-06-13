@@ -1,0 +1,233 @@
+/* styles home section*/
+.home {
+    background: var(--background-1);
+}
+
+.home p {
+    margin-top: 2rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+.home p .professional-in {
+    font-family: "Oswald-Regular";
+    color: var(--white);
+    transition: all ease 3s;
+}
+
+.write {
+    transition: all ease 0.5s;
+    width: 100%;
+    border-left: 2px solid var(--aqua);
+    position: absolute;
+    margin-top: 0.5rem;
+    top: -10%;
+    left: 92%;
+    background: var(--background-1);
+    animation: write-opacity 1s ease-in alternate infinite;
+    animation-delay: 1s;
+}
+
+@keyframes write-opacity {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.title-bracket {
+    color: var(--aqua);
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.9), 0 0 20px rgba(0, 255, 255, 0.9),
+    0 0 30px rgba(0, 255, 255, 0.9);
+    animation: infinite 1s ease-in title-bracket alternate;
+}
+
+@keyframes title-bracket {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.change {
+    margin-top: 3rem;
+}
+
+.principal-section{
+    margin-top: 3rem;
+}
+
+/* navigation arrow */
+.navigation-arrow {
+    z-index: 1;
+    bottom: 5rem;
+    width: 3rem;
+    height: 6rem;
+}
+
+.navigation-arrow img {
+    bottom: -20%;
+}
+
+.navigation-arrow span {
+    left: 0;
+    top: -60%;
+    transform: rotate(-90deg);
+    padding: 1rem;
+    font-size: xx-large;
+    color: var(--aqua);
+    text-shadow: var(--text-shadow);
+    font-family: "Satisfy-Regular";
+    transform: rotate(-90deg);
+    animation: navigation-arrow-span 0.5s infinite alternate;
+}
+
+@keyframes navigation-arrow-span {
+    from {
+        top: -55%;
+    }
+
+    to {
+        top: -75%;
+    }
+}
+
+.navigation-arrow-left {
+    left: 1rem;
+}
+
+.navigation-arrow-right {
+    right: 1rem;
+}
+
+/* photo */
+.principal-section .my-photo {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: var(--black-gardient);
+    box-shadow: var(--box-shadow);
+    transition: 0.5s;
+}
+
+.principal-section .my-photo::after {
+    content: "";
+    position: absolute;
+    left: calc(-5% - 0.3rem);
+    top: calc(-5% - 0.3rem);
+    width: 110%;
+    height: 110%;
+    border-radius: 50%;
+    border-top: 0.3rem solid transparent;
+    border-right: 0.3rem solid var(--aqua);
+    border-bottom: 0.3rem solid transparent;
+    border-left: 0.3rem solid var(--aqua);
+    animation: my-photo-1 3s linear infinite;
+}
+
+@keyframes my-photo-1 {
+    to {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(-360deg);
+    }
+}
+
+.principal-section .my-photo::before {
+    content: "";
+    position: absolute;
+    left: -0.3rem;
+    top: -0.3rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: 0.3rem solid var(--aqua);
+    border-right: 0.3rem solid transparent;
+    border-bottom: 0.3rem solid var(--aqua);
+    border-left: 0.3rem solid transparent;
+    animation: my-photo-2 1s linear infinite;
+}
+
+
+@keyframes my-photo-2 {
+    to {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(360deg);
+    }
+}
+/* photo */
+
+.buttons-cv-repo {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.buttons-cv-repo h3 {
+    margin-bottom: 1rem;
+}
+
+.buttons-cv-repo .cv {
+    background: rgba(0, 255, 255, 0.7);
+    border: none;
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+.buttons-cv-repo button {
+    margin: 0.5rem;
+}
+
+.my-social-network p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+    padding: 2rem;
+}
+
+.my-social-network ul {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+}
+
+.my-social-network li {
+    margin: 1rem;
+    width: 3rem;
+    cursor: url("../img/cursor/pointer.png"), pointer;
+    transition: all ease-out 0.3s;
+}
+
+.my-social-network li:hover {
+    transform: scale(1.5);
+}
+
+/* animates-javascript */
+.on-menu {
+    position: fixed;
+}
+
+.of-menu {
+    position: static;
+}
+
+.animation-write {
+    animation: write infinite 2s alternate;
+}
+
+@keyframes write {
+    from{
+        left: 92%;
+    }
+    to {
+        left: 10%;
+    }
+}
