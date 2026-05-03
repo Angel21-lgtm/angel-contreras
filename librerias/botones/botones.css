@@ -1,0 +1,55 @@
+/* LIBRERÍA PARA DISTINTOS BOTONES */
+
+/* btn-download */
+.btn-download {
+    padding: clamp(4px, 0.5vw, 8px);
+    background-color: #4b0f5f;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s linear, background-color 0.2s linear, box-shadow 0.2s linear, filter 0.1s linear;
+}
+
+.btn-download:hover {
+    transform: scale(1.01);
+    background-color: #8919ae;
+    box-shadow: 0 0 6px #b84de0, 0 0 12px rgba(137, 25, 174, 0.6), 0 0 24px rgba(137, 25, 174, 0.4);
+}
+
+.btn-download:active {
+    transform: scale(1);
+    filter: blur(1px);
+}
+
+.btn-download::after {
+    content: "🡇";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    padding: clamp(4px, 0.5vw, 8px);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: opacity 0.3s linear, transform 0.3s linear, top 0.3s linear;
+}
+
+.btn-download:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    top: -25%;
+    animation: btn-download 0.5s linear alternate infinite;
+}
+
+@keyframes btn-download {
+    from {
+        transform: translate(-50%, -50%);
+    }
+
+    to {
+        transform: translate(-50%, -30%);
+    }
+}

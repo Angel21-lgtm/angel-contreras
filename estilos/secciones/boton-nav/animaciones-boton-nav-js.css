@@ -1,0 +1,17 @@
+/* ANIMACIONES DEL BOTÓN NAV CON JAVASCRIPT */
+
+/* span boton nav */
+.activar-span-boton-nav-1 {
+    transform-origin: left top;
+    transform: rotate(45deg);
+}
+
+.activar-span-boton-nav-2 {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.activar-span-boton-nav-3 {
+    transform-origin: left bottom;
+    transform: rotate(-45deg);
+}

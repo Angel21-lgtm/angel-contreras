@@ -1,0 +1,31 @@
+/* LIBRERÍA DE DISPLAY */
+
+/* display flex box */
+.dis-fl {
+    display: flex;
+}
+
+/* display grid */
+.dis-gr {
+    display: grid;
+}
+
+/* display-block */
+.dis-bl {
+    display: block;
+}
+
+/* display inline */
+.dis-in {
+    display: inline;
+}
+
+/* display inine-block */
+.dis-in-bl {
+    display: inline-block;
+}
+
+/* display none */
+.dis-none {
+    display: none;
+}

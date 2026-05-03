@@ -1,0 +1,23 @@
+/* ANIMACIONES DEL NAV CON JAVASCRIPT */
+
+/* Contenedor nav */
+#nav.activar-nav {
+    transform: translateX(0);
+}
+
+/* Links */
+.link-nav-activ {
+    border-radius: 5px;
+    background-color: var(--morado-2);
+    box-shadow: var(--box-shadow-morado-neon);
+}
+
+.link-nav-activ:hover {
+    color: var(--blanco);
+}
+
+/* Imágenes de las secciones del nav */
+.img-seccion-nav-active {
+    transform: translate(calc(clamp(45px, 3.5vw, 60px) + 100%), -50%);
+    opacity: 1;
+}

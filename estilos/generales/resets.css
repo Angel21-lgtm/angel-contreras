@@ -1,0 +1,178 @@
+/* ESTILOS GENERALES PARA TODOS LOS ELEMENTOS */
+
+/* Selector universal y todo el html */
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    outline: 1px solid red;
+}
+
+/* Variables */
+:root {
+    /* Colores */
+    --negro: #171616;
+    /* Fondo de secciones principales */
+    --gris: #2c2c2c;
+    /* Artículos o contenedores de secciones */
+    --blanco: #F5F5F5;
+    /* Texto no principal */
+    --gris-claro: #b8b8b8;
+    /* Texto secundario */
+    --morado-1: #4b0f5f;
+    /* Color de encabezados principales o texto importante */
+    --morado-2: #8919ae;
+    /* Color de encabezados secundarios o resaltes */
+    --morado-gradient: linear-gradient(135deg, #31093e, #6b178c, #8f21d3);
+    /* Color de botones, cards y contenido secundario */
+    --box-shadow-morado-neon: 0 0 8px #b84de0, 0 0 16px rgba(137, 25, 174, 0.6), 0 0 28px rgba(137, 25, 174, 0.4);
+    --text-shadow-morado-neon: 0 0 2px #b84de0, 0 0 4px rgba(137, 25, 174, 0.6), 0 0 8px rgba(137, 25, 174, 0.4);
+
+    /* padding */
+    --padding-xs: clamp(4px, 0.5vw, 8px);
+    /* XS — micro espacios. Para: iconos dentro de botones, badges, elementos muy compactos */
+    --padding-sm: clamp(8px, 1vw, 12px);
+    /* SM — elementos pequeños. Para: botones pequeños, inputs compactos, chips, etiquetas */
+    --padding-md: clamp(12px, 1.5vw, 18px);
+    /* MD — estándar (base UI). Para: botones normales, cards internas, inputs estándar, nav items */
+    --padding-lg: clamp(16px, 2vw, 24px);
+    /* LG — secciones internas. Para: cards completas, contenedores, modales pequeños, bloques UI */
+    --padding-xl: clamp(20px, 2.5vw, 32px);
+    /* XL — layouts grandes. Para: hero sections, containers principales, páginas, layouts amplios */
+
+    /* margin */
+    --margin-xs: clamp(4px, 0.4vw, 8px);
+    /* Margin XS → separación mínima */
+    --margin-sm: clamp(8px, 0.8vw, 16px);
+    /* Margin SM → separación pequeña */
+    --margin-md: clamp(16px, 1.5vw, 24px);
+    /* Margin MD → separación estándar */
+    --margin-lg: clamp(24px, 2.5vw, 40px);
+    /* Margin LG → separación amplia */
+    --margin-xl: clamp(40px, 4vw, 64px);
+    /* Margin XL → separación entre secciones */
+    --margin-xxl: clamp(64px, 6vw, 100px);
+    /* Margin XXL → separación grande entre bloques */
+
+    /* font-size */
+    --fs-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    /* Base (texto normal) */
+    --fs-sm: clamp(0.875rem, 0.85rem + 0.2vw, 1rem);
+    /* Pequeño */
+    --fs-md: clamp(1.125rem, 1rem + 0.4vw, 1.375rem);
+    /* Subtítulos */
+    --fs-lg: clamp(1.5rem, 1.2rem + 0.8vw, 2rem);
+    /* Títulos */
+    --fs-xl: clamp(2rem, 1.5rem + 1.5vw, 2.75rem);
+    /* H2 / secciones */
+    --fs-xxl: clamp(2.5rem, 2rem + 2vw, 3.5rem);
+    /* H1 / hero */
+    --fs-display: clamp(3rem, 2.2rem + 3vw, 4.5rem);
+    /* Extra hero / display */
+
+    /* gap */
+    --gap-xs: clamp(0.25rem, 0.2rem + 0.3vw, 0.5rem);
+    /* Micro separación (iconos, botones juntos) */
+    --gap-sm: clamp(0.5rem, 0.4rem + 0.5vw, 0.75rem);
+    /* Pequeño (elementos relacionados) */
+    --gap-md: clamp(0.75rem, 0.6rem + 0.8vw, 1.25rem);
+    /* Base (layout normal) */
+    --gap-lg: clamp(1rem, 0.8rem + 1.2vw, 1.75rem);
+    /* Medio grande (secciones internas) */
+    --gap-xl: clamp(1.5rem, 1rem + 2vw, 3rem);
+    /* Grande (separación de bloques) */
+
+    /* z-index */
+    --z-base: 0;
+    /* Base del layout (contenido normal) */
+    --z-low: 1;
+    /* Elementos decorativos o detalles sobre base */
+    --z-medium: 2;
+    /* Componentes interactivos (cards, botones, overlays pequeños) */
+    --z-high: 3;
+    /* Elementos prioritarios (tooltips, dropdowns, hover states) */
+    --z-nav: 10000;
+    /* Navegación fija y botón del menú (máxima prioridad UI) */
+}
+
+/* Secciones */
+#inicio,
+#sobre-mi,
+#habilidades,
+#portafolio,
+#contacto {
+    min-width: 100%;
+    min-height: 100dvh;
+    background-color: var(--negro);
+}
+
+/* Imágenes */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Textos y encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Encabezados";
+    padding: var(--padding-md);
+}
+
+h1 {
+    font-size: var(--fs-lg);
+    color: var(--morado-1);
+    font-weight: 900;
+}
+
+h2 {
+    font-size: var(--fs-xl);
+    color: var(--morado-1);
+    font-weight: 900;
+}
+
+h3,
+h4 {
+    font-weight: 700;
+    font-size: var(--fs-md);
+    color: var(--morado-2);
+}
+
+h5,
+h6 {
+    font-weight: 400;
+    font-size: var(--fs-sm);
+    color: var(--morado-2);
+}
+
+p {
+    font-family: "Texto-Secundario";
+    font-size: var(--fs-body);
+    color: var(--gris-claro);
+    padding: var(--padding-xs);
+    cursor: text;
+    letter-spacing: 1px;
+}
+
+/* Botones y links */
+button,
+a {
+    font-family: "Texto-Principal";
+    color: var(--gris-claro);
+    font-size: var(--fs-sm);
+    padding: var(--padding-xs);
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,19 @@
+/* ESTILOS PARA FUENTES DE DISTINTOS TEXTOS */
+
+/* Texto principal */
+@font-face {
+    font-family: "Texto-Principal";
+    src: url("../../fuentes/Google_Sans/static/GoogleSans-SemiBoldItalic.ttf");
+}
+
+/* Texto secundario */
+@font-face {
+    font-family: "Texto-Secundario";
+    src: url("../../fuentes/Google_Sans/static/GoogleSans-Regular.ttf");
+}
+
+/* Encabezados */
+@font-face {
+    font-family: "Encabezados";
+    src: url("../../fuentes/Archivo_Black/ArchivoBlack-Regular.ttf");
+}

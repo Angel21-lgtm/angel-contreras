@@ -1,0 +1,59 @@
+/* ESTILOS DEL NAV (MENÚ DE NAVEGACIÓN) */
+
+/* Contenedor nav y contenedor ul */
+#nav {
+    width: 200px;
+    height: 100%;
+    background-color: var(--gris);
+    transform: translateX(-150%);
+    z-index: var(--z-nav);
+    padding: var(--padding-xs);
+    transition: transform 0.5s ease-out;
+    gap: var(--gap-md);
+}
+
+#nav>ul {
+    height: 100%;
+    width: 100%;
+    gap: var(--gap-sm);
+    padding: var(--padding-sm);
+}
+
+/* ícono */
+.icono {
+    width: 100%;
+    height: 80px;
+}
+
+.icono>img {
+    max-width: 110px;
+}
+
+/* Links */
+.links-nav {
+    color: var(--blanco);
+    padding: var(--padding-xs);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: text-shadow 0.3s ease, font-weight 0.2s ease-in;
+}
+
+#blog {
+    color: var(--morado-2);
+    transition: transform 0.2s linear, color 0.3s ease-in-out, font-weight 0.2s ease-in;
+}
+
+/* Imágenes de las secciones del nav */
+.img-seccion-nav {
+    width: clamp(48px, 3.6vw, 68px);
+    height: clamp(48px, 3.6vw, 68px);
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--morado-1);
+    opacity: 0;
+    border: 5px solid var(--gris);
+    transition: transform 0.3s linear, opacity 0.3s linear;
+}

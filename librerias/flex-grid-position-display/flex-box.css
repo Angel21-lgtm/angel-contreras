@@ -1,0 +1,76 @@
+/* LIBRERÍA DE FLEXBOX */
+
+/* justify-content */
+.just-cont-cent {
+    justify-content: center;
+}
+
+.just-cont-sp-ar {
+    justify-content: space-around;
+}
+
+.just-cont-sp-bet {
+    justify-content: space-between;
+}
+
+.just-cont-sp-ev {
+    justify-content: space-evenly;
+}
+
+.just-cont-fl-start {
+    justify-content: flex-start;
+}
+
+.just-cont-fl-end {
+    justify-content: flex-end;
+}
+
+/* align-items */
+.al-it-cent {
+    align-items: center;
+}
+
+.al-it-end {
+    align-items: end;
+}
+
+/* align-content */
+.al-cont-cent {
+    align-content: center;
+}
+
+.al-cont-end {
+    align-content: end;
+}
+
+/* align-self */
+.al-self-cent {
+    align-self: center;
+}
+
+.al-self-fl-start {
+    align-self: flex-start;
+}
+
+.al-self-fl-end {
+    align-self: flex-end;
+}
+
+/* flex-wrap */
+.fl-wr {
+    flex-wrap: wrap;
+}
+
+/* flex-direction */
+.fl-dir-col {
+    flex-direction: column;
+}
+
+/* flex */
+.fl-1 {
+    flex: 1;
+}
+
+.fl-0 {
+    flex: 0;
+}
