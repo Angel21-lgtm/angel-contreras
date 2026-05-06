@@ -2,58 +2,110 @@
 
 /* Contenedor nav y contenedor ul */
 #nav {
-    width: 200px;
-    height: 100%;
+    width: 2px;
+    height: 90%;
+    border-radius: 10px;
+    top: 5%;
+    left: 30px;
     background-color: var(--gris);
     transform: translateX(-150%);
     z-index: var(--z-nav);
-    padding: var(--padding-xs);
-    transition: transform 0.5s ease-out;
     gap: var(--gap-md);
+}
+
+#nav::before {
+    content: "";
+    width: clamp(18px, 1.5vw, 32px);
+    height: clamp(18px, 1.5vw, 32px);
+    border-radius: 50%;
+    background-color: var(--gris);
+    position: absolute;
+    bottom: -10px;
 }
 
 #nav>ul {
     height: 100%;
     width: 100%;
     gap: var(--gap-sm);
-    padding: var(--padding-sm);
-}
-
-/* ícono */
-.icono {
-    width: 100%;
-    height: 80px;
-}
-
-.icono>img {
-    max-width: 110px;
 }
 
 /* Links */
 .links-nav {
-    color: var(--blanco);
-    padding: var(--padding-xs);
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.3);
-    position: relative;
-    transition: text-shadow 0.3s ease, font-weight 0.2s ease-in;
-}
-
-#blog {
-    color: var(--morado-2);
-    transition: transform 0.2s linear, color 0.3s ease-in-out, font-weight 0.2s ease-in;
+    pointer-events: none;
+    transform: scale(0);
+    transition: transform 0.3s linear;
 }
 
 /* Imágenes de las secciones del nav */
 .img-seccion-nav {
-    width: clamp(48px, 3.6vw, 68px);
-    height: clamp(48px, 3.6vw, 68px);
-    top: 50%;
-    transform: translate(0, -50%);
-    padding: 10px;
+    width: clamp(24px, 2vw, 40px);
+    height: clamp(24px, 2vw, 40px);
+    background-color: var(--gris);
+    padding: 3px;
     border-radius: 50%;
-    background-color: var(--morado-1);
-    opacity: 0;
-    border: 5px solid var(--gris);
-    transition: transform 0.3s linear, opacity 0.3s linear;
+    border: 2px solid var(--gris);
+    transition: box-shadow 0.3s linear, background-color 0.3s linear, transform 0.3s linear;
+}
+
+.img-blog {
+    width: clamp(24px, 2vw, 40px);
+    height: clamp(24px, 2vw, 40px);
+    background-color: var(--blanco);
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid var(--gris);
+    transition: box-shadow 0.3s linear, background-color 0.3s linear, transform 0.3s linear;
+}
+
+/* ANIMACIONES DEL NAV */
+
+/* Links */
+.links-nav:hover {
+    color: var(--morado-2);
+    text-shadow: var(--text-shadow-morado-neon);
+    font-weight: 900;
+}
+
+/* Imágenes de las secciones del nav */
+.img-seccion-nav:hover {
+    transform: scale(1.08);
+}
+
+.img-blog:hover {
+    background-color: var(--morado-2);
+    transform: scale(1.07);
+    box-shadow: var(--box-shadow-morado-neon);
+}
+
+/* ANIMACIONES DEL NAV CON JAVASCRIPT */
+
+/* Links */
+.links-nav-pointer-events-true {
+    /* Clase para activar los links */
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.links-nav-pointer-events-active {
+    /* Clase para mostrar la sección actual */
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+/* Imágenes y de las secciones del nav */
+.img-seccion-nav-active {
+    background: var(--morado-gradient);
+    box-shadow: var(--box-shadow-morado-neon);
+}
+
+/* ESTILOS RESPONSIVOS */
+
+/* Móviles medianos */
+@media screen and (max-width: 576px) {
+    /* La mayoría de smartphones */
+
+    /* Contenedor nav y contenedor ul */
+    #nav {
+        left: 21px;
+    }
 }

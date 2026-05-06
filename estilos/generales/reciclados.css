@@ -49,6 +49,8 @@
     align-items: center;
     width: clamp(32px, 3vw, 45px);
     height: clamp(32px, 3vw, 45px);
+    border: 2px solid var(--morado-1);
+    border-radius: 50%;
     transition: filter 0.3s ease, transform 0.3s linear;
 }
 
@@ -57,22 +59,16 @@
     transform: scale(1.2);
 }
 
-/* encabezado-espejo */
-.encabezado-espejo {
-    width: 100%;
-    text-align: center;
-    text-shadow: 0 2px 2px var(--negro);
-    z-index: 5;
+/* Texto HTML */
+.texto-html {
+    font-family: "Resaltar";
+    color: var(--gris-claro);
+    font-size: var(--fs-sm);
+    opacity: 0.2;
 }
 
-.encabezado-espejo::before {
-    content: attr(data-text);
-    position: absolute;
-    bottom: -32%;
-    transform-origin: center;
+/* Texto (párrafos) */
+.texto {
+    padding: var(--padding-sm);
     color: var(--blanco);
-    transform: scale(-1);
-    opacity: 0.25;
-    filter: blur(1.5px);
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
 }

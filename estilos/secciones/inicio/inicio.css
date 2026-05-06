@@ -1,0 +1,98 @@
+/* ESTILOS DE LA SECCIÓN INICIO */
+
+/* Contenedor de contenido de inicio */
+.cont-inicio {
+    gap: var(--gap-lg);
+    padding: var(--padding-lg);
+}
+
+/* Estilos del texto de las habilidades del encabezado */
+#hab-cont-inicio {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#hab-cont-inicio::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--gris);
+    animation: parpadeo 0.8s linear infinite alternate;
+}
+
+/* Contenedor de imagen y redes sociales */
+.cont-img-red-social-inicio {
+    gap: var(--gap-lg);
+}
+
+/* Contenedor imagen principal */
+.cont-img-principal {
+    width: 100%;
+    height: 300px;
+}
+
+.cont-img-principal>img {
+    max-width: 300px;
+    height: 100%;
+    border-radius: 150px;
+}
+
+/* Contenedor del botón de las habilidades */
+.cont-btn-hab {
+    padding: var(--padding-xs);
+}
+
+/* ANIMACIONES DE LA SECCIÓN INICIO */
+
+/* Estilos del texto de las habilidades del encabezado */
+@keyframes parpadeo {
+    0% {
+        background-color: var(--gris);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+/* ANIMACIONES DE LA SECCIÓN INICIO CON JAVASCRIPT */
+
+/* Estilos del texto de las habilidades del encabezado */
+.sig-hab {
+    animation: sig-hab 1.5s linear alternate;
+}
+
+@keyframes sig-hab {
+    0% {
+        width: var(--ancho);
+    }
+
+    50% {
+        width: 0;
+    }
+
+    100% {
+        width: var(--ancho);
+    }
+}
+
+
+/* ESTILOS RESPONSIVOS */
+
+/* Móviles medianos */
+@media screen and (max-width: 576px) {
+    /* La mayoría de smartphones */
+
+    /* Contenedor principal del inicio (header) */
+    #inicio {
+        padding: var(--padding-md);
+    }
+
+    /* Contenedor nav y contenedor ul */
+    .cont-inicio {
+        padding: var(--padding-md);
+    }
+}

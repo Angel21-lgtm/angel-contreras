@@ -47,10 +47,8 @@
 
     <!-- Secciones -->
     <link rel="stylesheet" href="./estilos/secciones/boton-nav/boton-nav.css">
-    <link rel="stylesheet" href="./estilos/secciones/boton-nav/animaciones-boton-nav-js.css">
     <link rel="stylesheet" href="./estilos/secciones/nav/nav.css">
-    <link rel="stylesheet" href="./estilos/secciones/nav/animaciones-nav.css">
-    <link rel="stylesheet" href="./estilos/secciones/nav/animaciones--nav-js.css">
+    <link rel="stylesheet" href="./estilos/secciones/inicio/inicio.css">
     <!-- ESTILOS PROPIOS DE LA WEB -->
     <!---------------------------------------------------------------------------------------------------------------------------------->
 </head>
@@ -80,109 +78,149 @@
 
     <!---------------------------------------------------------------------------------------------------------------------------------->
     <!-- SECCIÓN DE MENÚ DE NAVEGACIÓN -->
-    <nav id="nav" class="pos-fix dis-fl just-cont-sp-ev al-it-cent fl-dir-col">
-        <div class="icono dis-fl just-cont-cent al-it-cent pos-rel">
-            <img src="./imagenes/iconos/icono-web/icono-blanco.png" alt="Ícono">
-        </div>
+    <nav id="nav" class="pos-fix dis-fl just-contcent al-it-cent fl-dir-col">
+        <ul class="dis-fl fl-1 fl-dir-col just-cont-sp-ev al-it-cent">
+            <li class="fl-1">
+                <a class="links-nav-pointer-events-active links-nav pos-rel dis-fl just-cont-cent al-it-cent"
+                    title="Inicio (encabezado)" href="#inicio">
+                    <span class="img-seccion-nav-active img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
+                        <img src="./imagenes/secciones/nav/inicio.png" alt="Inicio">
+                    </span>
+                </a>
+            </li>
 
-        <h3 class="encabezado-espejo pos-rel dis-fl just-cont-cent al-it-cent" data-text="Ángel Contreras">
-            Ángel Contreras
-            </h4>
+            <li class="fl-1">
+                <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="¿Quién soy?" href="#sobre-mi">
+                    <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
+                        <img src="./imagenes/secciones/nav/sobre-mi.png" alt="Sobre mí">
+                    </span>
+                </a>
+            </li>
 
-            <ul class="dis-fl fl-1 fl-dir-col just-cont-sp-ev al-it-cent">
-                <li>
-                    <a class="link-nav-activ links-nav pos-rel dis-fl just-cont-cent al-it-cent"
-                        title="Inicio (encabezado)" href="#inicio">
-                        Inicio
-                        <span class="img-seccion-nav-active img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
-                            <img src="./imagenes/secciones/nav/inicio.png" alt="Inicio">
-                        </span>
-                    </a>
-                </li>
+            <li class="fl-1">
+                <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="Mis habilidades"
+                    href="#habilidades">
+                    <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
+                        <img src="./imagenes/secciones/nav/habilidades.png" alt="Habilidades">
+                    </span>
+                </a>
+            </li>
 
-                <li>
-                    <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="¿Quién soy?" href="#sobre-mi">
-                        Sobre mí
-                        <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
-                            <img src="./imagenes/secciones/nav/sobre-mi.png" alt="Sobre mí">
-                        </span>
-                    </a>
-                </li>
+            <li class="fl-1">
+                <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="Mi portafolio (proyectos)"
+                    href="#portafolio">
+                    <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
+                        <img src="./imagenes/secciones/nav/portafolio.png" alt="Portafolio">
+                    </span>
+                </a>
+            </li>
 
-                <li>
-                    <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="Mis habilidades"
-                        href="#habilidades">
-                        Habilidades
-                        <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
-                            <img src="./imagenes/secciones/nav/habilidades.png" alt="Habilidades">
-                        </span>
-                    </a>
-                </li>
+            <li class="fl-1">
+                <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="Servicios profesionales"
+                    href="#servicios">
+                    <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
+                        <img src="./imagenes/secciones/nav/servicios.png" alt="Servicios">
+                    </span>
+                </a>
+            </li>
 
-                <li>
-                    <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="Mi portafolio (proyectos)"
-                        href="#portafolio">
-                        Portafolio
-                        <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
-                            <img src="./imagenes/secciones/nav/portafolio.png" alt="Portafolio">
-                        </span>
-                    </a>
-                </li>
+            <li class="fl-1">
+                <a id="blog" class="dis-fl just-cont-cent al-it-cent" title="Blog personal sobre informática"
+                    rel="noopener noreferrer" target="_blank" href="./otras-secciones/blog/blog.html">
+                    <span class="img-blog pos-abs dis-fl just-cont-cent al-it-cent">
+                        <img src="./imagenes/secciones/nav/blog.png" alt="Blog">
+                    </span>
+                </a>
+            </li>
 
-                <li>
-                    <a id="blog" class="dis-fl just-cont-cent al-it-cent" title="Blog personal sobre informática"
-                        rel="noopener noreferrer" target="_blank" href="./otras-secciones/blog/blog.html">
-                        Blog
-                    </a>
-                </li>
-
-                <li>
-                    <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="Contáctame" href="#contacto">
-                        Contacto
-                        <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
-                            <img src="./imagenes/secciones/nav/contacto.png" alt="Contacto">
-                        </span>
-                    </a>
-                </li>
-
-                <li>
-                    <button class="btn-download">
-                        Descargar CV
-                    </button>
-                </li>
-            </ul>
-
-            <ul class="cont-red-social">
-                <li>
-                    <a class="btn-red-social" title="Mensaje directo a WhatsApp"
-                        href="https://wa.me/+5215544017796?text=Hola,%20quiero%20solicitar%20información"
-                        rel="noopener noreferrer" target="_blank">
-                        <img src="./imagenes/iconos/redes-sociales/whatsapp.png" alt="WhatsApp">
-                    </a>
-                </li>
-
-                <li>
-                    <a class="btn-red-social" title="Mándame un mensaje SMS"
-                        href="sms:+5214421234567?body=Hola,%20quiero%20información" rel="noopener noreferrer"
-                        target="_blank">
-                        <img src="./imagenes/iconos/redes-sociales/sms.png" alt="SMS">
-                    </a>
-                </li>
-
-                <li>
-                    <a class="btn-red-social" title="Hazme una llamada" href="tel:+5214421234567"
-                        rel="noopener noreferrer" target="_blank">
-                        <img src="./imagenes/iconos/redes-sociales/telefono.png" alt="Teléfono">
-                    </a>
-                </li>
-            </ul>
+            <li class="fl-1">
+                <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="Contáctame" href="#contacto">
+                    <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
+                        <img src="./imagenes/secciones/nav/contacto.png" alt="Contacto">
+                    </span>
+                </a>
+            </li>
+        </ul>
     </nav>
     <!-- SECCIÓN DE MENÚ DE NAVEGACIÓN -->
     <!---------------------------------------------------------------------------------------------------------------------------------->
 
     <!---------------------------------------------------------------------------------------------------------------------------------->
     <!-- ENCABEZADO -->
-    <header id="inicio">
+    <header id="inicio" class="dis-fl just-cont-cent al-it-cent">
+        <article class="cont-inicio dis-gr gr-col-minmax-300px-1fr">
+            <div>
+                <h3>
+                    ¡Hola! Soy
+                </h3>
+
+                <h2>
+                    Ángel Contreras
+                </h2>
+
+                <h1>
+                    Desarrollador Web<br>
+                </h1>
+
+                <h2 id="hab-cont-inicio" class="pos-rel dis-in-bl">Click</h2>
+
+                <p class="texto">
+                    <b>Especialista técnico en informática</b> y en crear
+                    <strong>sitios web modernos</strong> y <strong>aplicaciones web optimizadas</strong>,
+                    combinando <strong>frontend</strong> y <strong>backend</strong> para <i>soluciones rápidas y
+                        escalables</i>.
+                </p>
+
+                <div class="cont-btn-hab">
+                    <button id="btn-hab-inicio" class="btn-transp-bord">
+                        Siguiente
+                    </button>
+                </div>
+            </div>
+
+            <div class="cont-img-red-social-inicio dis-gr pl-it-cent">
+                <div class="cont-img-principal dis-fl just-cont-cent al-it-cent">
+                    <img class="burbuja" src="./imagenes/secciones/inicio/presentacion-inicio.avif"
+                        alt="Imagen principal">
+                </div>
+
+                <ul class="cont-red-social">
+                    <li>
+                        <a class="btn-red-social" href="" rel="noopener noreferrer" target="_blank"
+                            title="Vísitame en Facebook">
+                            <img src="./imagenes/iconos/redes-sociales/facebook.png" alt="Facebook">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="btn-red-social" href="" rel="noopener noreferrer" target="_blank"
+                            title="Vísitame en Instagram">
+                            <img src="./imagenes/iconos/redes-sociales/instagram.png" alt="Instagram">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="btn-red-social" href="https://github.com/Angel21-lgtm" rel="noopener noreferrer"
+                            target="_blank" title="Vísitame en GitHub">
+                            <img src="./imagenes/iconos/redes-sociales/github.png" alt="GitHub">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="btn-red-social" href="" rel="noopener noreferrer" target="_blank"
+                            title="Vísitame en Linkedln">
+                            <img src="./imagenes/iconos/redes-sociales/linkedln.png" alt="Linkedln">
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="dis-fl just-cont-cent al-it-cent">
+                    <button class="btn-download">
+                        Descargar CV
+                    </button>
+                </div>
+            </div>
+        </article>
     </header>
     <!-- ENCABEZADO -->
     <!---------------------------------------------------------------------------------------------------------------------------------->
@@ -206,6 +244,13 @@
     <section id="portafolio">
     </section>
     <!-- SECCIÓN DE PROYECTOS -->
+    <!---------------------------------------------------------------------------------------------------------------------------------->
+
+    <!---------------------------------------------------------------------------------------------------------------------------------->
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section id="servicios">
+    </section>
+    <!-- SECCIÓN DE SERVICIOS -->
     <!---------------------------------------------------------------------------------------------------------------------------------->
 
     <!---------------------------------------------------------------------------------------------------------------------------------->

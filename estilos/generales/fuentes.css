@@ -17,3 +17,9 @@
     font-family: "Encabezados";
     src: url("../../fuentes/Archivo_Black/ArchivoBlack-Regular.ttf");
 }
+
+/* Texto resaltable para distintos estilos */
+@font-face {
+    font-family: "Resaltar";
+    src: url("../../fuentes/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}

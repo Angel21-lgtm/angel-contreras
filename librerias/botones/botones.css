@@ -1,8 +1,10 @@
 /* LIBRERÍA PARA DISTINTOS BOTONES */
 
+/* (Los colores se deben de cambiar para distintos estilos) */
+
 /* btn-download */
 .btn-download {
-    padding: clamp(4px, 0.5vw, 8px);
+    padding: clamp(8px, 1vw, 12px);
     background-color: #4b0f5f;
     border-radius: 8px;
     position: relative;
@@ -24,7 +26,7 @@
 }
 
 .btn-download::after {
-    content: "🡇";
+    content: "↓";
     position: absolute;
     left: 50%;
     top: 50%;
@@ -52,4 +54,54 @@
     to {
         transform: translate(-50%, -30%);
     }
+}
+
+/* Botón transparente con border incompletos */
+.btn-transp-bord {
+    padding: clamp(8px, 1vw, 12px);
+    border-radius: 2px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b8b8b8;
+    border-left: 2px solid #8919ae;
+    border-right: 2px solid #8919ae;
+    transition: text-shadow 0.31s step-end, transform 0.15s linear, box-shadow 0.31s step-end;
+}
+
+.btn-transp-bord:hover {
+    text-shadow: 0 0 4px #b84de0, 0 0 4px rgba(137, 25, 174, 0.6), 0 0 8px rgba(137, 25, 174, 0.4);
+    box-shadow: var(--box-shadow-morado-neon);
+}
+
+.btn-transp-bord:active {
+    transform: scale(0.89);
+}
+
+.btn-transp-bord::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #8919ae;
+    transition: width 0.3s linear;
+}
+
+.btn-transp-bord::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #8919ae;
+    transition: width 0.3s linear;
+}
+
+.btn-transp-bord:hover::after,
+.btn-transp-bord:hover::before {
+    width: 100%;
 }
