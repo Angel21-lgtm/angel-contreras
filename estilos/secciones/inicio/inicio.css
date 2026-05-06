@@ -88,7 +88,7 @@
 
     /* Contenedor principal del inicio (header) */
     #inicio {
-        padding: var(--padding-md);
+        padding: var(--padding-xl) var(--padding-md);
     }
 
     /* Contenedor nav y contenedor ul */
