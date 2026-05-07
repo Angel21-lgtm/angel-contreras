@@ -2,7 +2,7 @@
 
 const habilidadesInicio = (boton, contenedor, clase) => {
     // Arreglo de habilidades a mostrar
-    const habilidades = ["Full - Stack", "Front - End", "Back - End", "Hardware", "Software", "UI y UX", "Videojuegos"];
+    const habilidades = ["Junior", "Front-End", "Back-End", "Hardware", "Software", "UI y UX", "Videojuegos"];
 
     // Contador de elementos del array
     let cont = 0;

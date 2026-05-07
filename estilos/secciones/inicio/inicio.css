@@ -13,7 +13,7 @@
 }
 
 .nombre {
-    color: var(--morado-1);
+    color: var(--resaltado-primario);
 }
 
 /* Estilos del texto de las habilidades del encabezado */
@@ -23,7 +23,7 @@
     font-size: var(--fs-md);
     padding: 0 4px 0 0;
     margin-left: clamp(20px, 2.5vw, 32px);
-    color: var(--gris-claro);
+    color: var(--texto-secundario);
 }
 
 #hab-cont-inicio::after {
@@ -33,7 +33,6 @@
     top: 0;
     width: 4px;
     height: 100%;
-    background-color: var(--gris);
     animation: parpadeo 0.8s linear infinite alternate;
 }
 
@@ -59,12 +58,12 @@
     border-radius: 150px;
 }
 
-/* ANIMACIONES DE LA SECCIÓN INICIO */
+/* ANIMACIONES */
 
 /* Estilos del texto de las habilidades del encabezado */
 @keyframes parpadeo {
     0% {
-        background-color: var(--gris);
+        background-color: var(--fondo-secundario);
     }
 
     100% {
@@ -72,7 +71,7 @@
     }
 }
 
-/* ANIMACIONES DE LA SECCIÓN INICIO CON JAVASCRIPT */
+/* ANIMACIONES CON JAVASCRIPT */
 
 /* Estilos del texto de las habilidades del encabezado */
 .sig-hab {

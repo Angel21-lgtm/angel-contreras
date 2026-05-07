@@ -15,23 +15,27 @@ html {
 
 /* Variables */
 :root {
-    /* Colores */
-    --negro: #171616;
+    /* Colores y backgrounds */
+    --fondo-primario: #171616;
     /* Fondo de secciones principales */
-    --gris: #2c2c2c;
+    --fondo-secundario: #2c2c2c;
     /* Artículos o contenedores de secciones */
-    --blanco: #F5F5F5;
+    --texto-primario: #F5F5F5;
     /* Texto no principal */
-    --gris-claro: #b8b8b8;
+    --texto-secundario: #b8b8b8;
     /* Texto secundario */
-    --morado-1: #4b0f5f;
+    --resaltado-primario: #4b0f5f;
     /* Color de encabezados principales o texto importante */
-    --morado-2: #8919ae;
+    --resaltado-secundario: #8919ae;
     /* Color de encabezados secundarios o resaltes */
-    --morado-gradient: linear-gradient(135deg, #31093e, #6b178c, #8f21d3);
+    --gradient: linear-gradient(135deg, #31093e, #6b178c, #8f21d3);
     /* Color de botones, cards y contenido secundario */
-    --box-shadow-morado-neon: 0 0 8px #b84de0, 0 0 16px rgba(137, 25, 174, 0.6), 0 0 28px rgba(137, 25, 174, 0.4);
-    --text-shadow-morado-neon: 0 0 4px #b84de0, 0 0 4px rgba(137, 25, 174, 0.6), 0 0 8px rgba(137, 25, 174, 0.4);
+
+    /* box-shadow y text-shadow */
+    --box-shadow-1: 0 8px 32px rgba(0, 0, 0, 0.25);
+    --box-shadow-2: 0 0 0.5px 1px #212020;
+    --box-shadow-neon: 0 0 8px #b84de0, 0 0 16px rgba(137, 25, 174, 0.6), 0 0 28px rgba(137, 25, 174, 0.4);
+    --text-shadow-neon: 0 0 4px #b84de0, 0 0 4px rgba(137, 25, 174, 0.6), 0 0 8px rgba(137, 25, 174, 0.4);
 
     /* padding */
     --padding-xs: clamp(4px, 0.5vw, 8px);
@@ -109,7 +113,7 @@ html {
 #contacto {
     min-width: 100%;
     min-height: 100dvh;
-    background-color: var(--negro);
+    background-color: var(--fondo-primario);
     padding: var(--padding-xl);
     overflow: hidden;
 }
@@ -135,39 +139,39 @@ h6 {
 
 h1 {
     font-size: var(--fs-xl);
-    color: var(--blanco);
+    color: var(--texto-primario);
     font-weight: 900;
 }
 
 h2 {
     font-size: var(--fs-xl);
-    color: var(--morado-1);
+    color: var(--resaltado-primario);
     font-weight: 900;
 }
 
 h3 {
     font-size: var(--fs-md);
-    color: var(--blanco);
+    color: var(--texto-primario);
     font-weight: 700;
 }
 
 h4 {
     font-weight: 500;
     font-size: var(--fs-md);
-    color: var(--morado-2);
+    color: var(--resaltado-secundario);
 }
 
 h5,
 h6 {
     font-weight: 400;
     font-size: var(--fs-sm);
-    color: var(--morado-2);
+    color: var(--resaltado-secundario);
 }
 
 p {
     font-family: "Texto-Secundario";
     font-size: var(--fs-body);
-    color: var(--gris-claro);
+    color: var(--texto-secundario);
     padding: var(--padding-lg);
     cursor: text;
     letter-spacing: 2px;
@@ -178,7 +182,7 @@ p {
 button,
 a {
     font-family: "Texto-Principal";
-    color: var(--gris-claro);
+    color: var(--texto-secundario);
     font-size: var(--fs-sm);
     padding: var(--padding-xs);
     background-color: transparent;
@@ -189,7 +193,7 @@ a {
 
 /* strong, b e i */
 strong {
-    color: var(--morado-1);
+    color: var(--resaltado-primario);
     font-weight: 900;
     font-family: "Encabezados";
 }

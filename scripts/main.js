@@ -14,57 +14,77 @@ import activarLinksNav from "./secciones/nav/activarLinksNav.js";
 import seccionActual from "./secciones/nav/seccionActual.js";
 // Inicio
 import habilidadesInicio from "./secciones/inicio/habilidadesInicio.js";
+// Sobre Mi
+import sigInfo from "./secciones/sobre-mi/sigInfo.js";
 
 /* Declaración de la función principal */
 (function () {
-    // boton nav
-    const botonNav = document.getElementById("boton-nav"); // Botón del nav
-    const spanBotonNav = document.querySelectorAll(".span-boton-nav"); // Líneas del nav
-    const clasActivSpanNav = ["activar-span-boton-nav-1", "activar-span-boton-nav-2", "activar-span-boton-nav-3"]; // Clases de las líneas (span) del nav
+    return window.addEventListener("DOMContentLoaded", () => {
+        /* SECCIONES */
 
-    activarSpanBotonNav(botonNav, spanBotonNav, clasActivSpanNav); // Activar span del botón del nav
+        // boton nav
+        const botonNav = document.getElementById("boton-nav"); // Botón del nav
+        const spanBotonNav = document.querySelectorAll(".span-boton-nav"); // Líneas del nav
+        const clasActivSpanNav = ["activar-span-boton-nav-1", "activar-span-boton-nav-2", "activar-span-boton-nav-3"]; // Clases de las líneas (span) del nav
 
-    // nav
-    const linksNav = document.querySelectorAll(".links-nav"); // Links del nav
+        activarSpanBotonNav(botonNav, spanBotonNav, clasActivSpanNav); // Activar span del botón del nav
 
-    activarLinksNav(botonNav, linksNav, "links-nav-pointer-events-true"); // Activar los links del nav
+        // nav
+        const linksNav = document.querySelectorAll(".links-nav"); // Links del nav
 
-    const secciones = [document.getElementById("inicio"), document.getElementById("sobre-mi"), document.getElementById("habilidades"), document.getElementById("portafolio"), document.getElementById("servicios"), document.getElementById("contacto")]; // Secciones de la web
-    const imgSeccionNav = document.querySelectorAll(".img-seccion-nav"); // Contenedor de las imágenes de los links
+        activarLinksNav(botonNav, linksNav, "links-nav-pointer-events-true"); // Activar los links del nav
 
-    seccionActual(secciones, linksNav, imgSeccionNav, "links-nav-pointer-events-active", "img-seccion-nav-active"); // Activar estilos de la sección actual
+        const secciones = [document.getElementById("inicio"), document.getElementById("sobre-mi"), document.getElementById("habilidades"), document.getElementById("portafolio"), document.getElementById("servicios"), document.getElementById("contacto")]; // Secciones de la web
+        const imgSeccionNav = document.querySelectorAll(".img-seccion-nav"); // Contenedor de las imágenes de los links
 
-    // Inicio
-    const btnHabInicio = document.getElementById("btn-hab-inicio"); // Botón para cambiar las habilidades de la sección inicio
-    const habContInicio = document.getElementById("hab-cont-inicio"); // Contenedor que contiene el texto a cambiar
+        seccionActual(secciones, linksNav, imgSeccionNav, "links-nav-pointer-events-active", "img-seccion-nav-active"); // Activar estilos de la sección actual
 
-    habilidadesInicio(btnHabInicio, habContInicio, "sig-hab");
+        // Inicio
+        const btnHabInicio = document.getElementById("btn-hab-inicio"); // Botón para cambiar las habilidades de la sección inicio
+        const habContInicio = document.getElementById("hab-cont-inicio"); // Contenedor que contiene el texto a cambiar
 
-    /* ANIMACIONES OBSERVER */
-    // observer opacity
-    const crearObserverOpacity = crearObserver("observer-opacity-0", "observer-opacity-1");
+        habilidadesInicio(btnHabInicio, habContInicio, "sig-hab");
 
-    const observerOpacity = document.querySelectorAll(".observer-opacity");
+        // Sobre Mi
+        const contCardViewport = document.getElementById("cont-card-viewport"); // Contenedor principal
+        const btnSigInfoLeft = document.getElementById("btn-sig-info-left"); // Botón izquierdo
+        const btnSigInfoRight = document.getElementById("btn-sig-info-right"); // Botón derecho
+        const imgCardViewport = document.getElementById("img-card-viewport"); // Imágen
+        const encabezadoCardViewport = document.getElementById("encabezado-card-viewport"); // Encabezado
+        const parrafoCardViewport1 = document.getElementById("parrafo-card-viewport-1"); // Párrafo 1
+        const parrafoCardViewport2 = document.getElementById("parrafo-card-viewport-2"); // Párrafo 2 
 
-    observerOpacity.forEach(element => {
-        crearObserverOpacity.observe(element);
-    });
+        sigInfo(contCardViewport, btnSigInfoLeft, btnSigInfoRight, imgCardViewport, encabezadoCardViewport, parrafoCardViewport1, parrafoCardViewport2);
 
-    // observer left
-    const crearObserverLeft = crearObserver("observer-translate-left-opacity-0", "observer-translate-left-opacity-1");
 
-    const observerLeft = document.querySelectorAll(".observer-left");
 
-    observerLeft.forEach(element => {
-        crearObserverLeft.observe(element);
-    });
+        /* ANIMACIONES OBSERVER */
 
-    // observer right
-    const crearObserverRight = crearObserver("observer-translate-right-opacity-0", "observer-translate-right-opacity-1");
+        // observer opacity
+        const crearObserverOpacity = crearObserver("observer-opacity-0", "observer-opacity-1"); // Crear observer con animación opacidad
 
-    const observerRight = document.querySelectorAll(".observer-right");
+        const observerOpacity = document.querySelectorAll(".observer-opacity"); // Llamando a todos los elementos con esa clase para agregar el observer
 
-    observerRight.forEach(element => {
-        crearObserverRight.observe(element);
+        observerOpacity.forEach(element => {
+            crearObserverOpacity.observe(element);
+        }); // Corriendo a todos los elementos llamados y agregando el observer con  las clases seleccionadas
+
+        // observer left
+        const crearObserverLeft = crearObserver("observer-translate-left-opacity-0", "observer-translate-left-opacity-1"); // Crear observer con animación opacidad y transición izquierda
+
+        const observerLeft = document.querySelectorAll(".observer-left"); // Llamando a todos los elementos con esa clase para agregar el observer
+
+        observerLeft.forEach(element => {
+            crearObserverLeft.observe(element);
+        }); // Corriendo a todos los elementos llamados y agregando el observer con  las clases seleccionadas
+
+        // observer right
+        const crearObserverRight = crearObserver("observer-translate-right-opacity-0", "observer-translate-right-opacity-1"); // Crear observer con animación opacidad y transición derecha
+
+        const observerRight = document.querySelectorAll(".observer-right"); // Llamando a todos los elementos con esa clase para agregar el observer
+
+        observerRight.forEach(element => {
+            crearObserverRight.observe(element);
+        }); // Corriendo a todos los elementos llamados y agregando el observer con  las clases seleccionadas
     });
 })();

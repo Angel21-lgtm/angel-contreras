@@ -2,12 +2,12 @@
 
 /* opacity */
 .observer-opacity-0 {
-    transition: opacity 2s linear;
+    transition: opacity 2.5s linear;
     opacity: 0;
 }
 
 .observer-opacity-1 {
-    transition: opacity 2s linear;
+    transition: opacity 2.5s linear;
     opacity: 1;
 }
 
@@ -26,13 +26,13 @@
 
 /* translate right opacity */
 .observer-translate-right-opacity-0 {
-    transition: transform 2s ease-in-out, opacity 2s linear;
+    transition: transform 1.5s ease-in-out, opacity 2s linear;
     transform: translateX(100%);
     opacity: 0;
 }
 
 .observer-translate-right-opacity-1 {
-    transition: transform 2s ease-in-out, opacity 2s linear;
+    transition: transform 1.5s ease-in-out, opacity 2s linear;
     transform: translateX(0);
     opacity: 1;
 }

@@ -26,7 +26,8 @@
 }
 
 .btn-download::after {
-    content: "↓";
+    content: attr(data-text);
+    /* Ingresar el texto a mostrar con atributo data-text="" en el html */
     position: absolute;
     left: 50%;
     top: 50%;
@@ -72,7 +73,7 @@
 
 .btn-transp-bord:hover {
     text-shadow: 0 0 4px #b84de0, 0 0 4px rgba(137, 25, 174, 0.6), 0 0 8px rgba(137, 25, 174, 0.4);
-    box-shadow: var(--box-shadow-morado-neon);
+    box-shadow: 0 0 8px #b84de0, 0 0 16px rgba(137, 25, 174, 0.6), 0 0 28px rgba(137, 25, 174, 0.4);
 }
 
 .btn-transp-bord:active {
