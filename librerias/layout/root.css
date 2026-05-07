@@ -1,0 +1,92 @@
+/* SISTEMA DE VARIABLES PARA LAYOUT Y CONSTRUCCIÓN WEB */
+
+/* Variables */
+:root {
+    /* Colores y backgrounds */
+    --fondo-primario: #171616;
+    /* Fondo de secciones principales */
+    --fondo-secundario: #2c2c2c;
+    /* Artículos o contenedores de secciones */
+    --texto-primario: #F5F5F5;
+    /* Texto no principal */
+    --texto-secundario: #b8b8b8;
+    /* Texto secundario */
+    --resaltado-primario: #4b0f5f;
+    /* Color de encabezados principales o texto importante */
+    --resaltado-secundario: #8919ae;
+    /* Color de encabezados secundarios o resaltes */
+    --gradient: linear-gradient(135deg, #31093e, #6b178c, #8f21d3);
+    /* Color de botones, cards y contenido secundario */
+
+    /* box-shadow y text-shadow */
+    --box-shadow-1: 0 8px 32px rgba(0, 0, 0, 0.25);
+    --box-shadow-2: 0 0 0.5px 1px #212020;
+    --box-shadow-neon: 0 0 8px #b84de0, 0 0 16px rgba(137, 25, 174, 0.6), 0 0 28px rgba(137, 25, 174, 0.4);
+    --text-shadow-neon: 0 0 4px #b84de0, 0 0 4px rgba(137, 25, 174, 0.6), 0 0 8px rgba(137, 25, 174, 0.4);
+
+    /* padding */
+    --padding-xs: clamp(4px, 0.5vw, 8px);
+    /* XS — micro espacios. Para: iconos dentro de botones, badges, elementos muy compactos */
+    --padding-sm: clamp(8px, 1vw, 12px);
+    /* SM — elementos pequeños. Para: botones pequeños, inputs compactos, chips, etiquetas */
+    --padding-md: clamp(12px, 1.5vw, 18px);
+    /* MD — estándar (base UI). Para: botones normales, cards internas, inputs estándar, nav items */
+    --padding-lg: clamp(16px, 2vw, 24px);
+    /* LG — secciones internas. Para: cards completas, contenedores, modales pequeños, bloques UI */
+    --padding-xl: clamp(20px, 2.5vw, 32px);
+    /* XL — layouts grandes. Para: hero sections, containers principales, páginas, layouts amplios */
+
+    /* margin */
+    --margin-xs: clamp(4px, 0.4vw, 8px);
+    /* Margin XS → separación mínima */
+    --margin-sm: clamp(8px, 0.8vw, 16px);
+    /* Margin SM → separación pequeña */
+    --margin-md: clamp(16px, 1.5vw, 24px);
+    /* Margin MD → separación estándar */
+    --margin-lg: clamp(24px, 2.5vw, 40px);
+    /* Margin LG → separación amplia */
+    --margin-xl: clamp(40px, 4vw, 64px);
+    /* Margin XL → separación entre secciones */
+    --margin-xxl: clamp(64px, 6vw, 100px);
+    /* Margin XXL → separación grande entre bloques */
+
+    /* font-size */
+    --fs-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    /* Base (texto normal) */
+    --fs-sm: clamp(0.875rem, 0.85rem + 0.2vw, 1rem);
+    /* Pequeño */
+    --fs-md: clamp(1.125rem, 1rem + 0.4vw, 1.375rem);
+    /* Subtítulos */
+    --fs-lg: clamp(1.5rem, 1.2rem + 0.8vw, 2rem);
+    /* Títulos */
+    --fs-xl: clamp(2rem, 1.5rem + 1.5vw, 2.75rem);
+    /* H2 / secciones */
+    --fs-xxl: clamp(2.5rem, 2rem + 2vw, 3.5rem);
+    /* H1 / hero */
+    --fs-display: clamp(3rem, 2.2rem + 3vw, 4.5rem);
+    /* Extra hero / display */
+
+    /* gap */
+    --gap-xs: clamp(0.25rem, 0.2rem + 0.3vw, 0.5rem);
+    /* Micro separación (iconos, botones juntos) */
+    --gap-sm: clamp(0.5rem, 0.4rem + 0.5vw, 0.75rem);
+    /* Pequeño (elementos relacionados) */
+    --gap-md: clamp(0.75rem, 0.6rem + 0.8vw, 1.25rem);
+    /* Base (layout normal) */
+    --gap-lg: clamp(1rem, 0.8rem + 1.2vw, 1.75rem);
+    /* Medio grande (secciones internas) */
+    --gap-xl: clamp(1.5rem, 1rem + 2vw, 3rem);
+    /* Grande (separación de bloques) */
+
+    /* z-index */
+    --z-base: 0;
+    /* Base del layout (contenido normal) */
+    --z-low: 1;
+    /* Elementos decorativos o detalles sobre base */
+    --z-medium: 2;
+    /* Componentes interactivos (cards, botones, overlays pequeños) */
+    --z-high: 3;
+    /* Elementos prioritarios (tooltips, dropdowns, hover states) */
+    --z-nav: 10000;
+    /* Navegación fija y botón del menú (máxima prioridad UI) */
+}
