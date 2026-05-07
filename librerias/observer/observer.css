@@ -1,0 +1,38 @@
+/* ESTILOS PARA LOS OBJETOS OBSERVER */
+
+/* opacity */
+.observer-opacity-0 {
+    transition: opacity 2s linear;
+    opacity: 0;
+}
+
+.observer-opacity-1 {
+    transition: opacity 2s linear;
+    opacity: 1;
+}
+
+/* translate left opacity */
+.observer-translate-left-opacity-0 {
+    transition: transform 2s ease-in-out, opacity 2s linear;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.observer-translate-left-opacity-1 {
+    transition: transform 2s ease-in-out, opacity 2s linear;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* translate right opacity */
+.observer-translate-right-opacity-0 {
+    transition: transform 2s ease-in-out, opacity 2s linear;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.observer-translate-right-opacity-1 {
+    transition: transform 2s ease-in-out, opacity 2s linear;
+    transform: translateX(0);
+    opacity: 1;
+}

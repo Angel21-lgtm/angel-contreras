@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="./librerias/flex-grid-position-display/flex-box.css">
     <link rel="stylesheet" href="./librerias/flex-grid-position-display/grid.css">
     <link rel="stylesheet" href="./librerias/flex-grid-position-display/position.css">
+    <!-- observer -->
+    <link rel="stylesheet" href="./librerias/observer/observer.css">
 
     <!-- botones -->
     <link rel="stylesheet" href="./librerias/botones/botones.css">
@@ -49,6 +51,7 @@
     <link rel="stylesheet" href="./estilos/secciones/boton-nav/boton-nav.css">
     <link rel="stylesheet" href="./estilos/secciones/nav/nav.css">
     <link rel="stylesheet" href="./estilos/secciones/inicio/inicio.css">
+    <link rel="stylesheet" href="./estilos/secciones/sobre-mi/sobre-mi.css">
     <!-- ESTILOS PROPIOS DE LA WEB -->
     <!---------------------------------------------------------------------------------------------------------------------------------->
 </head>
@@ -150,41 +153,34 @@
     <header id="inicio" class="dis-fl just-cont-cent al-it-cent">
         <article class="cont-inicio dis-gr gr-col-minmax-300px-1fr">
             <div>
-                <h3 class="saludo">
-                    ¡Hola! Soy
-                </h3>
-
-                <h2>
-                    Ángel Contreras
-                </h2>
-
-                <h1>
-                    Desarrollador Web<br>
+                <h1 class="observer-left">
+                    <span class="saludo">¡Hola! Soy</span><br><span class="nombre">Ángel
+                        Contreras</span><br>Desarrollador Web Full-Stack
                 </h1>
 
-                <h2 id="hab-cont-inicio" class="pos-rel dis-in-bl">Click</h2>
+                <strong id="hab-cont-inicio" class="observer-right pos-rel dis-in-bl">Click Botón</strong>
 
-                <p class="texto">
+                <p class="observer-opacity">
                     <b>Especialista técnico en informática</b> y en crear
                     <strong>sitios web modernos</strong> y <strong>aplicaciones web optimizadas</strong>,
                     combinando <strong>frontend</strong> y <strong>backend</strong> para <i>soluciones rápidas y
                         escalables</i>.
                 </p>
 
-                <div class="cont-btn-hab">
+                <div class="observer-opacity cont-btn-hab">
                     <button id="btn-hab-inicio" class="btn-transp-bord">
                         Siguiente
                     </button>
                 </div>
             </div>
 
-            <div class="cont-img-red-social-inicio dis-gr pl-it-cent">
+            <div class="observer-opacity cont-img-red-social-inicio dis-gr pl-it-cent">
                 <div class="cont-img-principal dis-fl just-cont-cent al-it-cent">
                     <img class="burbuja" src="./imagenes/secciones/inicio/presentacion-inicio.avif"
                         alt="Imagen principal">
                 </div>
 
-                <ul class="cont-red-social">
+                <ul class="observer-right cont-red-social">
                     <li>
                         <a class="btn-red-social" href="" rel="noopener noreferrer" target="_blank"
                             title="Vísitame en Facebook">
@@ -214,7 +210,7 @@
                     </li>
                 </ul>
 
-                <div class="dis-fl just-cont-cent al-it-cent">
+                <div class="observer-left dis-gr pl-it-cent">
                     <button class="btn-download">
                         Descargar CV
                     </button>
@@ -228,6 +224,43 @@
     <!---------------------------------------------------------------------------------------------------------------------------------->
     <!-- SECCIÓN PRINCIPAL SOBRE MÍ -->
     <main id="sobre-mi">
+        <h2 class="observer-opacity">Sobre Mi</h2>
+
+        <section class="cont-card-viewport">
+            <article class="card-viewport">
+                <div class="observer-left cont-img-card-viewport" data-text="Hover">
+                    <img src="./imagenes/secciones/sobre-mi/full-stack.avif" alt="Full-Stack">
+                </div>
+
+                <div>
+                    <h2 class="observer-right">Full - Stack</h2>
+
+                    <p class="observer-opacity">
+                        Soy <strong>Desarrollador Web Full Stack</strong> enfocado en crear aplicaciones web modernas,
+                        rápidas y escalables, cuidando tanto el frontend como el backend.
+                    </p>
+
+                    <p class="observer-opacity">
+                        Manejo <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>SQL</strong>,
+                        <strong>HTML</strong> y <strong>CSS</strong> para desarrollar sitios y sistemas completos.
+                    </p>
+                </div>
+            </article>
+
+            <div class="cont-fl-card-viewport">
+                <div>
+                    <button class="btn-transp-bord">
+                        ↞
+                    </button>
+                </div>
+
+                <div>
+                    <button class="btn-transp-bord">
+                        ↠
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- SECCIÓN PRINCIPAL SOBRE MÍ -->
     <!---------------------------------------------------------------------------------------------------------------------------------->
@@ -235,6 +268,9 @@
     <!---------------------------------------------------------------------------------------------------------------------------------->
     <!-- SECCIÓN DE HABILIDADES -->
     <section id="habilidades">
+        <h2>
+            Habilidades
+        </h2>
     </section>
     <!-- SECCIÓN DE HABILIDADES -->
     <!---------------------------------------------------------------------------------------------------------------------------------->
@@ -242,6 +278,9 @@
     <!---------------------------------------------------------------------------------------------------------------------------------->
     <!-- SECCIÓN DE PROYECTOS -->
     <section id="portafolio">
+        <h2>
+            Proyectos
+        </h2>
     </section>
     <!-- SECCIÓN DE PROYECTOS -->
     <!---------------------------------------------------------------------------------------------------------------------------------->
@@ -249,6 +288,9 @@
     <!---------------------------------------------------------------------------------------------------------------------------------->
     <!-- SECCIÓN DE SERVICIOS -->
     <section id="servicios">
+        <h2>
+            Servicios
+        </h2>
     </section>
     <!-- SECCIÓN DE SERVICIOS -->
     <!---------------------------------------------------------------------------------------------------------------------------------->
@@ -256,6 +298,9 @@
     <!---------------------------------------------------------------------------------------------------------------------------------->
     <!-- SECCIÓN DE CONTACTO -->
     <footer id="contacto">
+        <h2>
+            Contacto
+        </h2>
     </footer>
     <!-- SECCIÓN DE CONTACTO -->
     <!---------------------------------------------------------------------------------------------------------------------------------->

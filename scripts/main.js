@@ -1,6 +1,10 @@
 /* FUNCIÓN PRINCIPAL PARA EJECUTAR MÓDULOS, FUNCIONES, ETC */
 
 /* Importación de librerías */
+// observer
+import crearObserver from "../librerias/observer/observer.js";
+// cards constructor
+import CardsConstructor from "../librerias/cards-constructor/cardsConstructor.js";
 
 /* Importación de módulos de la web */
 // boton nav
@@ -25,7 +29,7 @@ import habilidadesInicio from "./secciones/inicio/habilidadesInicio.js";
 
     activarLinksNav(botonNav, linksNav, "links-nav-pointer-events-true"); // Activar los links del nav
 
-    const secciones = [document.getElementById("inicio"), document.getElementById("sobre-mi"), document.getElementById("habilidades"), document.getElementById("portafolio"), document.getElementById("contacto")]; // Secciones de la web
+    const secciones = [document.getElementById("inicio"), document.getElementById("sobre-mi"), document.getElementById("habilidades"), document.getElementById("portafolio"), document.getElementById("servicios"), document.getElementById("contacto")]; // Secciones de la web
     const imgSeccionNav = document.querySelectorAll(".img-seccion-nav"); // Contenedor de las imágenes de los links
 
     seccionActual(secciones, linksNav, imgSeccionNav, "links-nav-pointer-events-active", "img-seccion-nav-active"); // Activar estilos de la sección actual
@@ -35,4 +39,32 @@ import habilidadesInicio from "./secciones/inicio/habilidadesInicio.js";
     const habContInicio = document.getElementById("hab-cont-inicio"); // Contenedor que contiene el texto a cambiar
 
     habilidadesInicio(btnHabInicio, habContInicio, "sig-hab");
+
+    /* ANIMACIONES OBSERVER */
+    // observer opacity
+    const crearObserverOpacity = crearObserver("observer-opacity-0", "observer-opacity-1", 0.8);
+
+    const observerOpacity = document.querySelectorAll(".observer-opacity");
+
+    observerOpacity.forEach(element => {
+        crearObserverOpacity.observe(element);
+    });
+
+    // observer left
+    const crearObserverLeft = crearObserver("observer-translate-left-opacity-0", "observer-translate-left-opacity-1");
+
+    const observerLeft = document.querySelectorAll(".observer-left");
+
+    observerLeft.forEach(element => {
+        crearObserverLeft.observe(element);
+    });
+
+    // observer right
+    const crearObserverRight = crearObserver("observer-translate-right-opacity-0", "observer-translate-right-opacity-1");
+
+    const observerRight = document.querySelectorAll(".observer-right");
+
+    observerRight.forEach(element => {
+        crearObserverRight.observe(element);
+    });
 })();

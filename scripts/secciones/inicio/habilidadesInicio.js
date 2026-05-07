@@ -2,45 +2,47 @@
 
 const habilidadesInicio = (boton, contenedor, clase) => {
     // Arreglo de habilidades a mostrar
-    const habilidades = ["FrontEnd", "BackEnd", "FullStack", "Hardware", "Software", "UI", "UX", "Diseño", "Videojuegos"];
+    const habilidades = ["Full - Stack", "Front - End", "Back - End", "Hardware", "Software", "UI y UX", "Videojuegos"];
 
+    // Contador de elementos del array
     let cont = 0;
 
-    boton.addEventListener("click", e => {
+    boton.addEventListener("click", () => {
         // Desactivar botón para evitar errores
         boton.disabled = true;
+
+        // Forzando quitar la clase para recalcular tamaño
+        contenedor.classList.remove(clase);
+        void contenedor.offsetWidth;
 
         // Agregando clase antes del texto
         contenedor.classList.add(clase);
 
-        // Intervalo para agregar el texto
-        const intervalText = setInterval(() => {
+        // Tiempo para agregar el texto
+        setTimeout(() => {
 
             // Agregar texto de las habilidades al contenedor
-            contenedor.innerHTML = habilidades[cont];
+            contenedor.textContent = habilidades[cont];
 
-            // Calculando el ancho del nuevo texto y agregándolo
-            contenedor.style.width = `${contenedor.scrollWidth}px`;
+            // Calculando el ancho del nuevo texto responsivo y agregándolo
+            contenedor.style.width = "";
 
             // Crear la variable --ancho para usarla en la animación CSS
             contenedor.style.setProperty("--ancho", `${contenedor.scrollWidth}px`);
 
+            // Decisión para reiniciar el contador
             if (cont >= habilidades.length - 1) {
                 cont = 0;
             } else {
                 cont++;
             }
-
-            clearInterval(intervalText);
         }, 750);
 
-        // Intervalo para agregar la clase
-        const intervalClase = setInterval(() => {
+        // Tiempo para remover la clase
+        setTimeout(() => {
             boton.disabled = false;
 
             contenedor.classList.remove(clase);
-
-            clearInterval(intervalClase);
         }, 1500);
     });
 }

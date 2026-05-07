@@ -10,7 +10,7 @@ html {
     border: none;
     list-style: none;
     text-decoration: none;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 /* Variables */
@@ -105,11 +105,13 @@ html {
 #sobre-mi,
 #habilidades,
 #portafolio,
+#servicios,
 #contacto {
     min-width: 100%;
     min-height: 100dvh;
     background-color: var(--negro);
     padding: var(--padding-xl);
+    overflow: hidden;
 }
 
 /* Imágenes */
@@ -126,7 +128,9 @@ h4,
 h5,
 h6 {
     font-family: "Encabezados";
-    padding: var(--padding-sm);
+    padding: var(--padding-xl);
+    line-height: 1.2;
+    letter-spacing: 1.5px;
 }
 
 h1 {
@@ -164,9 +168,10 @@ p {
     font-family: "Texto-Secundario";
     font-size: var(--fs-body);
     color: var(--gris-claro);
-    padding: var(--padding-xs);
+    padding: var(--padding-lg);
     cursor: text;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
+    line-height: 1.5;
 }
 
 /* Botones y links */

@@ -66,9 +66,3 @@
     font-size: var(--fs-sm);
     opacity: 0.2;
 }
-
-/* Texto (párrafos) */
-.texto {
-    padding: var(--padding-sm);
-    color: var(--blanco);
-}
