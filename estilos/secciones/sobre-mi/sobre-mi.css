@@ -6,6 +6,13 @@
     gap: var(--gap-md);
 }
 
+/* Card viewport */
+.card-viewport {
+    gap: var(--gap-xs);
+    max-width: 1200px;
+    padding: var(--padding-lg);
+}
+
 /* Contenedor de la imágen */
 .cont-img-card-viewport {
     border-radius: 10px;
@@ -61,12 +68,13 @@
 /* ESTILOS RESPONSIVOS */
 
 /* 4. Tablets verticales / móviles grandes */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     /* Tablets verticales y teléfonos grandes */
 
     /* Card viewport */
     .card-viewport {
         display: flex;
         flex-wrap: wrap;
+        max-width: 600px;
     }
 }

@@ -112,7 +112,6 @@ html {
 #servicios,
 #contacto {
     min-width: 100%;
-    min-height: 100dvh;
     background-color: var(--fondo-primario);
     padding: var(--padding-xl);
     overflow: hidden;
