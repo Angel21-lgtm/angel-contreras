@@ -2,27 +2,15 @@
 
 /* Contenedor principal para las cards */
 .cont-card-viewport {
-    display: flex;
-    flex-direction: column;
     padding: var(--padding-md);
-    gap: var(--gap-lg);
-}
-
-/* Contenedor card */
-.card-viewport {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--gap-md);
 }
 
 /* Contenedor de la imágen */
 .cont-img-card-viewport {
     border-radius: 10px;
     overflow: hidden;
-    position: relative;
     box-shadow: var(--box-shadow-2);
-    max-height: 350px;
-    display: grid;
-    place-items: center;
 }
 
 .cont-img-card-viewport::after {
@@ -53,8 +41,6 @@
 
 /* Contenedor de los botones */
 .cont-btn-card-viewport {
-    display: flex;
-    justify-content: center;
     gap: var(--gap-lg);
 }
 
@@ -68,8 +54,19 @@
 /* ANIMACIONES */
 
 /* Contenedor de la imágen */
-.cont-img-card-viewport:hover {}
-
 .cont-img-card-viewport:hover::after {
     opacity: 0;
+}
+
+/* ESTILOS RESPONSIVOS */
+
+/* 4. Tablets verticales / móviles grandes */
+@media screen and (max-width: 768px) {
+    /* Tablets verticales y teléfonos grandes */
+
+    /* Card viewport */
+    .card-viewport {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

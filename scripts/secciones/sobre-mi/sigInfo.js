@@ -64,23 +64,24 @@ const sigInfo = (contenedor, botonIzquierdo, botonDerecho, imgCard, encabezado, 
     contParrafo1.innerHTML = info[0].parrafo1;
     contParrafo2.innerHTML = info[0].parrafo2;
 
+    // Función para renderizar información
+    const renderInfo = () => {
+        imgCard.src = info[count].srcImg;
+        imgCard.alt = info[count].altImg;
+        encabezado.textContent = info[count].encabezado;
+        contParrafo1.innerHTML = info[count].parrafo1;
+        contParrafo2.innerHTML = info[count].parrafo2;
+    }
+
 
     // Cambiar datos del lado izquierdo
     botonIzquierdo.addEventListener("click", () => {
-        // Forzar tamaño sin devolver valor del contenedor principal
-        void contenedor.offsetWidth;
-
-        // Dejando la medida responsiva
-        contenedor.style.width = "";
-
+        // Decisión para saber si se continúa agregando datos o detener si llega al principio del array
         if (count > 0) {
             count--;
 
-            imgCard.src = info[count].srcImg;
-            imgCard.alt = info[count].altImg;
-            encabezado.textContent = info[count].encabezado;
-            contParrafo1.innerHTML = info[count].parrafo1;
-            contParrafo2.innerHTML = info[count].parrafo2;
+            // Llamando la función renderInfo() para agregar los datos
+            renderInfo();
         } else {
             count = 0;
         }
@@ -88,20 +89,12 @@ const sigInfo = (contenedor, botonIzquierdo, botonDerecho, imgCard, encabezado, 
 
     // Cambiar datos del lado derecho
     botonDerecho.addEventListener("click", () => {
-        // Forzar tamaño sin devolver valor del contenedor principal
-        void contenedor.offsetWidth;
-
-        // Dejando la medida responsiva
-        contenedor.style.width = "";
-
+        // Decisión para saber si se continúa agregando datos o detener si llega al final del array
         if (count < info.length - 1) {
             count++;
 
-            imgCard.src = info[count].srcImg;
-            imgCard.alt = info[count].altImg;
-            encabezado.textContent = info[count].encabezado;
-            contParrafo1.innerHTML = info[count].parrafo1;
-            contParrafo2.innerHTML = info[count].parrafo2;
+            // Llamando la función renderInfo() para agregar los datos
+            renderInfo();
         } else {
             count = info.length - 1;
         }
