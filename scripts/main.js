@@ -42,7 +42,7 @@ import habilidadesInicio from "./secciones/inicio/habilidadesInicio.js";
 
     /* ANIMACIONES OBSERVER */
     // observer opacity
-    const crearObserverOpacity = crearObserver("observer-opacity-0", "observer-opacity-1", 0.8);
+    const crearObserverOpacity = crearObserver("observer-opacity-0", "observer-opacity-1");
 
     const observerOpacity = document.querySelectorAll(".observer-opacity");
 
