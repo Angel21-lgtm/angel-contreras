@@ -87,6 +87,7 @@
     /* Componentes interactivos (cards, botones, overlays pequeños) */
     --z-high: 3;
     /* Elementos prioritarios (tooltips, dropdowns, hover states) */
-    --z-nav: 10000;
+    --z-nav: 4;
     /* Navegación fija y botón del menú (máxima prioridad UI) */
+    --z-loading: 5;
 }

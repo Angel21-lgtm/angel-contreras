@@ -3,12 +3,10 @@
 /* Contenedor principal para las cards */
 .cont-card-viewport {
     padding: var(--padding-md);
-    gap: var(--gap-md);
 }
 
 /* Card viewport */
 .card-viewport {
-    gap: var(--gap-xs);
     max-width: 1200px;
     padding: var(--padding-lg);
 }

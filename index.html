@@ -49,10 +49,11 @@
     <link rel="stylesheet" href="./estilos/generales/fuentes.css">
 
     <!-- Secciones -->
-    <link rel="stylesheet" href="./estilos/secciones/boton-nav/boton-nav.css">
-    <link rel="stylesheet" href="./estilos/secciones/nav/nav.css">
-    <link rel="stylesheet" href="./estilos/secciones/inicio/inicio.css">
-    <link rel="stylesheet" href="./estilos/secciones/sobre-mi/sobre-mi.css">
+    <link rel="stylesheet" href="./estilos/secciones/loading.css">
+    <link rel="stylesheet" href="./estilos/secciones/boton-nav.css">
+    <link rel="stylesheet" href="./estilos/secciones/nav.css">
+    <link rel="stylesheet" href="./estilos/secciones/inicio.css">
+    <link rel="stylesheet" href="./estilos/secciones/sobre-mi.css">
     <!-- ESTILOS PROPIOS DE LA WEB -->
     <!---------------------------------------------------------------------------------------------------------------------------------->
 </head>
@@ -60,7 +61,29 @@
 <body>
     <!---------------------------------------------------------------------------------------------------------------------------------->
     <!-- SECCIÓN DE CARGA -->
-    <section>
+    <section class="cont-loading fl-cent pos-fix">
+        <div class="cont-animacion-loading">
+            <p>
+                Loading
+
+                <span class="sp-text-loading dis-in-bl"></span>
+
+                <span class="sp-text-loading dis-in-bl"></span>
+
+                <span class="sp-text-loading dis-in-bl"></span>
+            </p>
+
+            <div class="cont-brs-loading fl-cent">
+                <div class="cont-br-loading fl-cent">
+                    <div class="br-loading">
+                    </div>
+                </div>
+            </div>
+
+            <p class="porcentaje-loading">
+                0%
+            </p>
+        </div>
     </section>
     <!-- SECCIÓN DE CARGA -->
     <!---------------------------------------------------------------------------------------------------------------------------------->
@@ -82,64 +105,61 @@
 
     <!---------------------------------------------------------------------------------------------------------------------------------->
     <!-- SECCIÓN DE MENÚ DE NAVEGACIÓN -->
-    <nav id="nav" class="pos-fix dis-fl just-contcent al-it-cent fl-dir-col">
+    <nav id="nav" class="pos-fix fl-cent fl-dir-col">
         <ul class="dis-fl fl-1 fl-dir-col just-cont-sp-ev al-it-cent">
             <li class="fl-1">
-                <a class="links-nav-pointer-events-active links-nav pos-rel dis-fl just-cont-cent al-it-cent"
-                    title="Inicio (encabezado)" href="#inicio">
-                    <span class="img-seccion-nav-active img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
+                <a class="links-nav-pointer-events-active links-nav pos-rel fl-cent" title="Inicio (encabezado)"
+                    href="#inicio">
+                    <span class="img-seccion-nav-active img-seccion-nav pos-abs fl-cent">
                         <img src="./imagenes/secciones/nav/inicio.png" alt="Inicio">
                     </span>
                 </a>
             </li>
 
             <li class="fl-1">
-                <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="¿Quién soy?" href="#sobre-mi">
-                    <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
+                <a class="links-nav pos-rel fl-cent" title="¿Quién soy?" href="#sobre-mi">
+                    <span class="img-seccion-nav pos-abs fl-cent">
                         <img src="./imagenes/secciones/nav/sobre-mi.png" alt="Sobre mí">
                     </span>
                 </a>
             </li>
 
             <li class="fl-1">
-                <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="Mis habilidades"
-                    href="#habilidades">
-                    <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
+                <a class="links-nav pos-rel fl-cent" title="Mis habilidades" href="#habilidades">
+                    <span class="img-seccion-nav pos-abs fl-cent">
                         <img src="./imagenes/secciones/nav/habilidades.png" alt="Habilidades">
                     </span>
                 </a>
             </li>
 
             <li class="fl-1">
-                <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="Mi portafolio (proyectos)"
-                    href="#portafolio">
-                    <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
+                <a class="links-nav pos-rel fl-cent" title="Mi portafolio (proyectos)" href="#portafolio">
+                    <span class="img-seccion-nav pos-abs fl-cent">
                         <img src="./imagenes/secciones/nav/portafolio.png" alt="Portafolio">
                     </span>
                 </a>
             </li>
 
             <li class="fl-1">
-                <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="Servicios profesionales"
-                    href="#servicios">
-                    <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
+                <a class="links-nav pos-rel fl-cent" title="Servicios profesionales" href="#servicios">
+                    <span class="img-seccion-nav pos-abs fl-cent">
                         <img src="./imagenes/secciones/nav/servicios.png" alt="Servicios">
                     </span>
                 </a>
             </li>
 
             <li class="fl-1">
-                <a id="blog" class="dis-fl just-cont-cent al-it-cent" title="Blog personal sobre informática"
-                    rel="noopener noreferrer" target="_blank" href="./otras-secciones/blog/blog.html">
-                    <span class="img-blog pos-abs dis-fl just-cont-cent al-it-cent">
+                <a id="blog" class="fl-cent" title="Blog personal sobre informática" rel="noopener noreferrer"
+                    target="_blank" href="./otras-secciones/blog/blog.html">
+                    <span class="img-blog pos-abs fl-cent">
                         <img src="./imagenes/secciones/nav/blog.png" alt="Blog">
                     </span>
                 </a>
             </li>
 
             <li class="fl-1">
-                <a class="links-nav pos-rel dis-fl just-cont-cent al-it-cent" title="Contáctame" href="#contacto">
-                    <span class="img-seccion-nav pos-abs dis-fl just-cont-cent al-it-cent">
+                <a class="links-nav pos-rel fl-cent" title="Contáctame" href="#contacto">
+                    <span class="img-seccion-nav pos-abs fl-cent">
                         <img src="./imagenes/secciones/nav/contacto.png" alt="Contacto">
                     </span>
                 </a>

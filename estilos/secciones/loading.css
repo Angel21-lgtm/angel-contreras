@@ -1,0 +1,141 @@
+/* ESTILOS DE LA SECCIÓN DE CARGA */
+
+/* Contenedor de la sección */
+.cont-loading {
+    background-color: var(--fondo-primario);
+    width: 100%;
+    min-height: 100dvh;
+    padding: var(--padding-xs);
+    pointer-events: none;
+    z-index: var(--z-loading);
+    left: 0;
+    top: 0;
+    transition: opacity 0.5s linear, z-index 0.5s linear;
+}
+
+/* Contenedor del texto y las barras de animación */
+.cont-animacion-loading {
+    padding: var(--padding-sm);
+    display: grid;
+}
+
+/* span del texto */
+.sp-text-loading {
+    width: clamp(4px, 0.5vw, 6px);
+    height: clamp(4px, 0.5vw, 6px);
+    border-radius: 50%;
+    background-color: var(--texto-primario);
+}
+
+/* Contenedor de las barras de carga */
+.cont-brs-loading {
+    width: clamp(250px, 30vw, 350px);
+    height: 40px;
+    border: 3px solid var(--texto-primario);
+    padding: var(--padding-xs);
+}
+
+/* Contenedor de la barra de carga */
+.cont-br-loading {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Barra de carga */
+.br-loading {
+    width: 100%;
+    height: 100%;
+    background-color: var(--texto-primario);
+}
+
+/* Texto del porcentaje de carga */
+.porcentaje-loading {
+    padding: 0;
+    text-align: right;
+}
+
+/* ANIMACIONES */
+
+/* span del texto */
+.sp-text-loading:nth-child(1) {
+    animation: sp-text-loading-1 0.5s linear infinite alternate;
+}
+
+.sp-text-loading:nth-child(2) {
+    animation: sp-text-loading-2 0.6s linear infinite alternate;
+}
+
+.sp-text-loading:nth-child(3) {
+    animation: sp-text-loading-3 0.7s linear infinite alternate;
+}
+
+@keyframes sp-text-loading-1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes sp-text-loading-2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+@keyframes sp-text-loading-3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+/* ANIMACIONES CON JAVASCRIPT */
+
+/* Contenedor de la sección */
+.cont-loading-opacity-0 {
+    opacity: 0;
+}
+
+.cont-loading-display-none {
+    display: none;
+}
+
+/* Barra de carga */
+.animacion-loading {
+    animation: loading 5s linear;
+}
+
+@keyframes loading {
+    0% {
+        transform: translateX(calc(-100% - 3px));
+    }
+
+    25% {
+        transform: translateX(-75%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

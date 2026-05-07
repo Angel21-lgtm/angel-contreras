@@ -1,5 +1,12 @@
 /* LIBRERÍA DE FLEXBOX */
 
+/* flex-center */
+.fl-cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* justify-content */
 .just-cont-cent {
     justify-content: center;
