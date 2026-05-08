@@ -67,9 +67,40 @@
     opacity: 0.2;
 }
 
-/* Contenedor que deja en claro un texto de presentación de las secciones */
+/* Contenedor que deja en claro un texto de presentación de las secciones, va en los header (encabezados de secciones) */
 .text-presentacion {
     padding: var(--gap-lg);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Encabezado de secciones principales (h2) */
+.encabezado-seccion-principal {
+    position: relative;
+    margin-left: var(--margin-xl);
+}
+
+.encabezado-seccion-principal::after,
+.encabezado-seccion-principal::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Encabezados";
+    padding: var(--padding-xl);
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+    font-size: var(--fs-xl);
+    font-weight: 900;
+}
+
+.encabezado-seccion-principal::after {
+    left: -10px;
+    color: var(--texto-primario);
+}
+
+.encabezado-seccion-principal::before {
+    left: -20px;
+    color: var(--resaltado-secundario);
 }

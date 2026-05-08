@@ -63,7 +63,7 @@
 /* Estilos del texto de las habilidades del encabezado */
 @keyframes parpadeo {
     0% {
-        background-color: var(--fondo-secundario);
+        background-color: var(--fondo-terciario);
     }
 
     100% {
@@ -100,12 +100,6 @@
     /* La mayoría de smartphones */
 
     /* Contenedor principal del inicio (header) */
-    #inicio {
-        padding: var(--padding-md);
-    }
 
     /* Contenedor nav y contenedor ul */
-    .cont-inicio {
-        padding: var(--padding-xl) var(--padding-md);
-    }
 }

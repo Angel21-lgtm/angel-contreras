@@ -63,36 +63,61 @@ const main = () => {
 
     /* ANIMACIONES OBSERVER */
 
-    // observer opacity
-    const crearObserverOpacity = crearObserver("observer-opacity-0", "observer-opacity-1"); // Crear observer con animación opacidad
+    // observer opacity infinito
+    const crearObserverOpacityInfinito = crearObserver("observer-opacity-0", "observer-opacity-1"); // Crear observer con animación opacidad
 
-    const observerOpacity = document.querySelectorAll(".observer-opacity"); // Llamando a todos los elementos con esa clase para agregar el observer
+    const observerOpacityInfinito = document.querySelectorAll(".observer-opacity"); // Llamando a todos los elementos con esa clase para agregar el observer
 
-    observerOpacity.forEach(element => {
-        crearObserverOpacity.observe(element);
+    observerOpacityInfinito.forEach(element => {
+        crearObserverOpacityInfinito.observe(element);
     }); // Corriendo a todos los elementos llamados y agregando el observer con  las clases seleccionadas
 
-    // observer left
-    const crearObserverLeft = crearObserver("observer-translate-left-opacity-0", "observer-translate-left-opacity-1"); // Crear observer con animación opacidad y transición izquierda
+    // observer top infinito
+    const crearObserverTopInfinito = crearObserver("observer-translate-top-opacity-0", "observer-translate-top-opacity-1"); // Crear observer con animación opacidad y transición arriba
 
-    const observerLeft = document.querySelectorAll(".observer-left"); // Llamando a todos los elementos con esa clase para agregar el observer
+    const observerTopInfinito = document.querySelectorAll(".observer-top"); // Llamando a todos los elementos con esa clase para agregar el observer
 
-    observerLeft.forEach(element => {
-        crearObserverLeft.observe(element);
+    observerTopInfinito.forEach(element => {
+        crearObserverTopInfinito.observe(element);
     }); // Corriendo a todos los elementos llamados y agregando el observer con  las clases seleccionadas
 
-    // observer right
-    const crearObserverRight = crearObserver("observer-translate-right-opacity-0", "observer-translate-right-opacity-1"); // Crear observer con animación opacidad y transición derecha
+    // observer right infinito
+    const crearObserverRightInfinito = crearObserver("observer-translate-right-opacity-0", "observer-translate-right-opacity-1"); // Crear observer con animación opacidad y transición derecha
 
-    const observerRight = document.querySelectorAll(".observer-right"); // Llamando a todos los elementos con esa clase para agregar el observer
+    const observerRightInfinito = document.querySelectorAll(".observer-right"); // Llamando a todos los elementos con esa clase para agregar el observer
 
-    observerRight.forEach(element => {
-        crearObserverRight.observe(element);
+    observerRightInfinito.forEach(element => {
+        crearObserverRightInfinito.observe(element);
+    }); // Corriendo a todos los elementos llamados y agregando el observer con  las clases seleccionadas
+
+    // observer bottom infinito
+    const crearObserverBottomInfinito = crearObserver("observer-translate-bottom-opacity-0", "observer-translate-bottom-opacity-1"); // Crear observer con animación opacidad y transición abajo
+
+    const observerBottomInfinito = document.querySelectorAll(".observer-bottom"); // Llamando a todos los elementos con esa clase para agregar el observer
+
+    observerBottomInfinito.forEach(element => {
+        crearObserverBottomInfinito.observe(element);
+    }); // Corriendo a todos los elementos llamados y agregando el observer con  las clases seleccionadas
+
+    // observer left infinito
+    const crearObserverLeftInfinito = crearObserver("observer-translate-left-opacity-0", "observer-translate-left-opacity-1"); // Crear observer con animación opacidad y transición izquierda
+
+    const observerLeftInfinito = document.querySelectorAll(".observer-left"); // Llamando a todos los elementos con esa clase para agregar el observer
+
+    observerLeftInfinito.forEach(element => {
+        crearObserverLeftInfinito.observe(element);
     }); // Corriendo a todos los elementos llamados y agregando el observer con  las clases seleccionadas
 };
 
 /* INICIAR LOADING */
-window.addEventListener("load", loading);
+window.addEventListener("load", () => {
+    // Elementos del loading
+    const contLoading = document.querySelector(".cont-loading"); // Contenedor principal de todos los elementos
+    const brLoading = document.querySelector(".br-loading"); // Barra de carga
+    const porcentajeLoading = document.querySelector(".porcentaje-loading"); // Número con porcentaje
+
+    loading(contLoading, brLoading, porcentajeLoading, "animacion-loading", "cont-loading-opacity-0", "cont-loading-display-none");
+});
 
 /* INICIAR APP */
 document.addEventListener("DOMContentLoaded", main);

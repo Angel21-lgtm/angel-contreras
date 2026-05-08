@@ -1,13 +1,11 @@
 /* FUNCIÓN PARA MOSTRAR LA CARGA DE LA PÁGINA WEB */
 
-const loading = () => {
-    // Elementos del loading
-    const contLoading = document.querySelector(".cont-loading"); // Contenedor principal de todos los elementos
-    const brLoading = document.querySelector(".br-loading"); // Barra de carga
-    const porcentajeLoading = document.querySelector(".porcentaje-loading"); // Número con porcentaje
+const loading = (contLoading, brLoading, porcentajeLoading, clasAnimacionLoading, clasContOpacity0Loading, clasContDisplayNoneLoading, time = 50) => {
+    // Quitando scroll del body
+    document.body.style.overflow = "hidden";
 
     // Agregando clase de animación de carga
-    brLoading.classList.add("animacion-loading");
+    brLoading.classList.add(clasAnimacionLoading);
 
     // Animación de carga de porcentaje de la página
     let count = 1;
@@ -16,20 +14,22 @@ const loading = () => {
             porcentajeLoading.textContent = `${count}%`;
             count++;
         } else {
-            count = 1;
             clearInterval(interval);
         }
-    }, 50);
+    }, time);
 
-    // Agrenado clase de opacidad en 5 segundos después de que acabe la animación
+    // Agregando clase de opacidad en 5 segundos después de que acabe la animación
     setTimeout(() => {
-        contLoading.classList.add("cont-loading-opacity-0");
-    }, 5000);
+        contLoading.classList.add(clasContOpacity0Loading);
+
+        // Agregando scroll del body
+        document.body.style.overflow = "auto";
+    }, (time * 100) + 500);
 
     // Quitando la sección de carga después de que se quita la opacidad 0.5s después de la animación de opacity: 0;
     setTimeout(() => {
-        contLoading.classList.add("cont-loading-display-none");
-    }, 5500);
+        contLoading.classList.add(clasContDisplayNoneLoading);
+    }, (time * 100) + 1000);
 }
 
 export default loading;

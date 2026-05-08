@@ -7,7 +7,7 @@
     border-radius: 10px;
     top: 5%;
     left: 30px;
-    background-color: var(--fondo-secundario);
+    background-color: var(--fondo-terciario);
     transform: translateX(-150%);
     z-index: var(--z-nav);
     gap: var(--gap-md);
@@ -18,7 +18,7 @@
     width: clamp(18px, 1.5vw, 32px);
     height: clamp(18px, 1.5vw, 32px);
     border-radius: 50%;
-    background-color: var(--fondo-secundario);
+    background-color: var(--fondo-terciario);
     position: absolute;
     bottom: -10px;
 }
@@ -40,10 +40,10 @@
 .img-seccion-nav {
     width: clamp(24px, 2vw, 40px);
     height: clamp(24px, 2vw, 40px);
-    background-color: var(--fondo-secundario);
+    background-color: var(--fondo-terciario);
     padding: 3px;
     border-radius: 50%;
-    border: 2px solid var(--fondo-secundario);
+    border: 2px solid var(--fondo-terciario);
     transition: box-shadow 0.3s linear, background-color 0.3s linear, transform 0.3s linear;
 }
 
@@ -53,7 +53,7 @@
     background-color: var(--texto-primario);
     padding: 3px;
     border-radius: 50%;
-    border: 2px solid var(--fondo-secundario);
+    border: 2px solid var(--fondo-terciario);
     transition: box-shadow 0.3s linear, background-color 0.3s linear, transform 0.3s linear;
 }
 

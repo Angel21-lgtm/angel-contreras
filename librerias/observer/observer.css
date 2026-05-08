@@ -11,16 +11,29 @@
     opacity: 1;
 }
 
-/* translate left opacity */
-.observer-translate-left-opacity-0 {
-    transition: transform 2s ease-in-out, opacity 2s linear;
-    transform: translateX(-100%);
+/* translate top opacity */
+.observer-translate-top-opacity-0 {
+    transition: transform 1s linear, opacity 2s linear;
+    transform: translateY(-100%);
     opacity: 0;
 }
 
-.observer-translate-left-opacity-1 {
-    transition: transform 2s ease-in-out, opacity 2s linear;
-    transform: translateX(0);
+.observer-translate-top-opacity-1 {
+    transition: transform 1s linear, opacity 2s linear;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* translate bottom opacity */
+.observer-translate-bottom-opacity-0 {
+    transition: transform 1s linear, opacity 2s linear;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.observer-translate-bottom-opacity-1 {
+    transition: transform 1s linear, opacity 2s linear;
+    transform: translateY(0);
     opacity: 1;
 }
 
@@ -33,6 +46,19 @@
 
 .observer-translate-right-opacity-1 {
     transition: transform 1.5s ease-in-out, opacity 2s linear;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* translate left opacity */
+.observer-translate-left-opacity-0 {
+    transition: transform 2s ease-in-out, opacity 2s linear;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.observer-translate-left-opacity-1 {
+    transition: transform 2s ease-in-out, opacity 2s linear;
     transform: translateX(0);
     opacity: 1;
 }

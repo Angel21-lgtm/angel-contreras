@@ -1,5 +1,10 @@
 /* ESTILOS DE LA SECCIÓN SOBRE MI */
 
+/* Contenedor de la sección (principal) */
+#sobre-mi {
+    background-color: var(--fondo-secundario);
+}
+
 /* Contenedor principal para las cards */
 .cont-card-viewport {
     padding: var(--padding-md);
@@ -47,6 +52,8 @@
 /* Contenedor de los botones */
 .cont-btn-card-viewport {
     gap: var(--gap-lg);
+    width: 100%;
+    padding: 0 0 0 var(--padding-md);
 }
 
 /* Botones */
@@ -54,6 +61,12 @@
     font-weight: 900;
     font-size: var(--fs-lg);
     padding: var(--padding-xs) var(--padding-lg);
+}
+
+/* Párrafos */
+#parrafo-card-viewport-1,
+#parrafo-card-viewport-2 {
+    padding: var(--padding-md);
 }
 
 /* ANIMACIONES */
